@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#Wrapper {
+	height: 600px;
+	width: 1313px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background-color: #FFF;
+}
+#Banner {
+	position: absolute;
+	height: 288px;
+	width: 1313px;
+	left: 0px;
+	top: 0px;
+}
+#Icons {
+	position: absolute;
+	height: 402px;
+	width: 1314px;
+	left: 0px;
+	top: 268px;
+	background-color: #CEE4E2;
+}
+body {
+	background-color: #D68E3E;
+}
+.centerimage {
+	display: block;
+	margin: auto;
+}

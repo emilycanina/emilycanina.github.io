@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#B6CED1;
+	margin:0px;
+}
+
+#wrapper{
+	height:897px;
+	width:1065px;	
+	background-image:url(images/homebkgd2.png);
+	background-repeat:no-repeat;
+		}
+
+#pagewrapper{
+	height:897px;
+	width:1065px;	
+	background-image:url(images/bgimgpage.jpg);
+	background-repeat:no-repeat;
+	}
+	
+/*columns*/
+#lefttcol{
+	width:400px;
+	height:650px;
+	float:left;
+	margin:60px 0px 0px 140px;
+	padding:0px;
+}
+
+
+#rightcol{
+	width:400px;
+	height:400px;
+	margin:20px 0px 0px 15px;
+	float:left;
+	
+}
+	
+ /*Text & Headers---------------------------------------------*/
+h1{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;
+	
+}
+h2 {
+	color: green;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	margin-bottom:-12px;
+	margin-left:5px;
+}
+
+p{
+	color: black;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:10px;
+	margin-left:5px;
+}
+
+bold p{
+	font-weight:300;
+}
+
+ /*HOME -navigation--------------------------------------------------*/
+
+#hnav{
+	float:right; color:#000; height:40px; width:31ß0px;margin:15px 50px 0px 0px;
+}
+
+#hnav ul{
+	list-style-type:none;
+}
+
+#hnav li{
+	display:inline;
+	margin-left:20px;
+}
+
+
+#hnav a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+#hnav a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+
+#hnav a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A; text-decoration:underline;	
+}
+
+#hnav a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A; text-decoration:underline;	
+}
+
+/*HOME- FOOTER navigation--------------------------------------------------*/
+#hnavft{
+	float:right;clear:right; width:300px; height:50px;
+	margin:720px 180px 0px 0px;
+}
+
+#hnavft ul{
+	list-style-type:none;
+}
+
+#hnavft li{
+	display:inline;
+	margin-left:20px;
+}
+
+#hnavft a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+
+#hnavft a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+
+#hnavft a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+#hnavft a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+
+ /*PAGES- navigation--------------------------------------------------*/
+
+#pnav{
+	float:right;
+	color:#000;
+	height:100px;
+	width:130px;
+	margin:0px 55px 0px 0px;
+}
+#pnav ul{
+	list-style:none;
+}
+
+#pnav li{
+	text-decoration:none;
+	margin-bottom:10px;
+}
+
+#pnav a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;text-decoration:none;
+}
+
+#pnav a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;text-decoration:none;
+}
+
+#pnav a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;font-weight:200; text-decoration:underline;a
+}
+
+#pnav a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;font-weight:200; text-decoration:underline;
+}
+
+/*PAGES- FOOTER navigation--------------------------------------------------*/
+#pnavft{
+	float:left;
+	clear:left;
+	width:300px;
+	height:50px;
+	margin:70px 0px 0px 140px;
+}
+
+#pnavft ul{
+	list-style-type:none;
+}
+
+#pnavft li{
+	display:inline;
+	margin-left:20px;
+}
+
+#pnavft a:link, a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;text-decoration:none;
+}
+
+#pnavft a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;
+	text-decoration:none;
+}
+
+#pnavft a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+#pnavft a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+
+#logo{
+	height:75px;
+	width:95px;
+	margin:0px 0px 0px 10px;
+	float:left;
+	clear:left;
+	}

@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:white;
+	margin:0%;
+	line-height:1;
+	font-size:16px;
+}
+	
+#wrapper{
+	height:100%;
+	width:100%;
+	margin:0%;
+}
+ 
+img {max-width:100%;
+-ms-interpolation-mode:bicubic;
+}
+
+ 
+ /*Header---------------------------------------------*/
+#header{
+	clear:both;
+	float:left;
+	top:2.6%;
+	bottom:7.42%;
+	margin-left:20.93%;
+	height:9.11%;
+	width:52.08%;
+	position:relative;
+}
+
+#header h1{
+	padding:auto;
+}
+
+.logo, .logo a{
+	float:left;
+	padding:0;
+	margin:0;
+	display:block;
+}
+
+.logo img{
+	display:block;
+}
+
+ /*top nav ------------------------------*/
+#topnav{
+	float:left;
+	color:#906; 
+	margin-left:12.6%%; 
+	margin-top:1.3%; 
+	}
+
+#topnav ul {list-style-type:none;}
+#topnav li {display:inline; margin-left:6.4%;}
+#topnav a:link {font-family:"Century Gothic"; color:#770062; text-decoration:none; font-size:93.8%;}
+#topnav a:visited {font-family:"Century Gothic"; color:#770062; text-decoration:none;font-size:93.8%;}
+#topnav a:active {font-family:"Century Gothic"; color:#96C; text-decoration:none;font-size:93.8%;}
+#topnav a:hover {font-family:"Century Gothic"; color:#96C; text-decoration:none;font-size:93.8%;}
+	
+/*image------------------------------*/	
+ #image{
+			width:29.1%;
+			height:39.06%;
+			margin-left:20.93%;
+			clear:both;
+			}
+
+/*contact------------------------------*/
+		#contact {
+			width:34.88%;
+			height:32.55%;
+			float:left;
+			margin-top:-30%;
+			margin-left:55.81%;
+		}
+		
+			#contact p {font-family:"Century Gothic"; font-size:100%; color:black; line-height:1.1;}
+			
+ /*Contact Nav------------------------------*/
+#contactnav {
+	width:100%; 
+	height:100%;
+	}
+
+#contactnav ul {list-style-type:none; font-family:"Century Gothic"; font-size:87.5%;}
+
+#contactnav ul li {display:inline-block; margin-top:1.30%; margin-left:1.74%;}
+	
+/**#contactnav li.cell {width:75px; height:100px; background-image:url(../images/cellphone.png);}**/
+
+/**#contactnav li.email {width:100px; height:100px;}*/
+
+/**#contactnav li.linkedin {width:75px; height:100px;}*/
+
+#contactnav a:visited {color:red; text-decoration:none;}
+#contactnav a:link {color:red; text-decoration:none;}
+#contactnav a:active {color:red; text-decoration:none;}
+#contactnav a:hover {color:red; text-decoration:none;}
+
+
+     /*content------------------------------*/
+		#content {
+			width:69.77%;
+			clear:both;
+			margin-top:1.3%;
+			margin-left:20.93%;
+		}
+	
+/*PROJECT PAGES sketch Button on Project Pages ------------------------------*/	
+#sketch {width:100px; clear:both; float:left; margin-top:-580px; margin-left:680px;}	
+		
+#sketch p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}
+
+.sketchicon, .sketchicon a{
+	float:left;
+	padding:0;
+	margin:0;
+	position:relative;
+	display: block;
+}
+
+.sketchicon img {display:block;}
+
+/*sketchback PAGES  Back Button ------------------------------*/	
+#sketchback {width:200px; float:right; margin-top:-800px; margin-right:0px;}		
+#sketchback p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}
+
+.sketchback, .sketchback a{
+	float:left;
+	padding:0;
+	margin:0;
+	position:relative;
+	display: block;
+}
+
+.sketchback img {display:block;}
+					
+     /*PROJECT PAGES sketchcontent Pages of Sketches--------------------------*/ 
+		#sketchcontent {
+			width:674px;
+			height:800px;
+			clear:both;
+			margin-left:180px;
+			/*--border-style:solid;
+			border-color:black;--*/
+		}
+#sketchcontent p {font-family:"Century Gothic"; font-size:100%; color:black; line-height:1.1;}		
+#sketchcontent h1 {font-family:"Century Gothic"; font-size:112.5%; color:black; line-height:1.1;}
+
+			
+/*PROJECT PAGES market 1------------------------------*/
+	ul.marketing {list-style-type:none; margin-bottom:20px; margin-left:180px; float:left; display:inline;}
+	ul.marketing li {float:left; width:auto; height:100px; margin-bottom:20px;}
+	ul.marketing li.img {margin:0; padding:0; width:100px; margin-right:10px;}
+	ul.marketing li.text {width:600px; margin-top:-8px;}
+	ul.marketing li.text h2 {font-size:14px; font-family:"century gothic";}
+	ul.marketing li.text h3 {font-size:12px; font-style:italic;}	
+
+		
+ /*PROJECT PAGES MAIN div---------------------------------------------*/	
+  #main {
+	  	height:340px; 
+		width:420px;
+		clear:both;
+		margin-left:180px;
+		border-style:solid;
+		border-color:black;
+		}
+	
+	/*PROJECT PAGESprojectnav---------------------------------------------*/
+		#projectnav {			
+					color:#906; 
+					height:75px; 
+					width:450px;
+					float:left; 
+					margin-left:180px; 
+					margin-top:0px; 
+					border-style:solid;
+					border-color:black;
+				}
+			
+		#projectnav ul {list-style-type:none;}
+		#projectnav li {display:inline; margin-right:50px; margin-left:0px;}		
+		#projectnav a:link {font-family:"Century Gothic";}		
+		#projectnav a:visited {font-family:"Century Gothic";}		
+		#projectnav a:active {font-family:"Century Gothic";}		
+		#projectnav a:hover {font-family:"Century Gothic";}
+
+		#projectnav h3{font-family:"century gothic"; font-size:12px; color:black; font-style:italic;margin-top:0px;}
+		
+		   	 /*PROJECT PAGES caption --------------------------------------------*/			
+			    #caption{
+					width:420px;
+					margin-left:180px;
+					margin-top:0px;
+					float:left;
+					position:relative;
+					border-style:solid;
+					border-color:black;
+					}
+				
+				#caption p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1;}
+				#caption p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1; margin-top:15px;}
+				#caption h1 {font-family:"Century Gothic"; font-size:18px; color:black; margin-top:0px; margin-bottom:-5px;}
+
+	   	  /*PROJECT PAGES caption --------------------------------------------*/			
+			 #captiongrocer{
+				width:420px;
+				margin-left:0px;
+				margin-top:0px;
+				float:left;
+				position:relative;}
+				
+			 #captiongrocer p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1; margin-top:15px;}
+			 #captiongrocer h1 {font-family:"Century Gothic"; font-size:18px; color:black; margin-top: 20px; margin-bottom:-5px;}
+
+ /* ALL box nav------------------------------*/
+#boxnav {
+	clear:both; 
+	color:#906;  
+	width:17.86%;
+	height:auto;
+	}
+
+#boxnav ul {list-style-type:none; text-align:center; font-family:"Century Gothic"; font-size:100%;}
+
+#boxnav ul li {margin-top:15px; width:100%; height:100%; padding-top:40%; padding-bottom:40%}
+	
+#boxnav li.green {width:100%; height:100%;background-color:rgba(180,209,56,1.0);padding-top:40%; padding-bottom:40%;}/*background-color:#B4D138; */
+
+#boxnav li.purple {width:100%;height:100%; background-color:rgba(119,0,98,1.0); padding-top:40%; padding-bottom:40%;}/*background-color:#770062*/
+
+#boxnav li.blue {width:100%; height:100%; background-color:rgba(0,186,193,1.0);padding-top:40%; padding-bottom:40%;}
+
+#boxnav a:visited {color:white; text-decoration:none;}
+
+#boxnav a:link {color:white; text-decoration:none;}
+#boxnav a:active {color:white; text-decoration:none;}
+#boxnav a:hover {color:white; text-decoration:none;}
+
+
+#boxnav li.green:visited {background-color:rgba(180,209,56,1.0)}
+#boxnav li.green:link {background-color:rgba(180,209,56,1.0)}
+#boxnav li.green:active {background-color:rgba(180,209,56,1.0)}
+#boxnav li.green:hover {background-color:rgba(180,209,56,0.5)}
+
+#boxnav li.purple:active {background-color:rgba(119,0,98,1.0);}
+#boxnav li.purple:hover {background-color:rgba(119,0,98,0.5);}
+
+#boxnav li.blue:active {background-color:rgba(0,186,193,1.0);}
+#boxnav li.blue:hover {background-color:rgba(0,186,193,0.5);}
+
+
+
+
+
+

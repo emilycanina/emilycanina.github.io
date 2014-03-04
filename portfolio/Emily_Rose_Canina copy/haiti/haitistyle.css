@@ -1,0 +1,342 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#B6CED1;
+	margin:0px;
+}
+
+#wrapper{
+	height:897px;
+	width:1065px;	
+	background-image:url(images/homebkgd2.png);
+	background-repeat:no-repeat;
+		}
+
+#pagewrapper{
+	height:897px;
+	width:1065px;	
+	background-image:url(images/bgimage2.png);
+	background-repeat:no-repeat;
+	}
+/*drops next to nav*/	
+#dropGI{
+	height:30px;
+	width:15px;
+	background-image:url(images/yellowdrop.png);
+	background-repeat:no-repeat;
+	margin:12px 0px 0px 14px;
+	float:left;
+}
+
+#dropD{
+	height:30px;
+	width:15px;
+	background-image:url(images/yellowdrop.png);
+	background-repeat:no-repeat;
+	margin:40px 0px 0px 14px;
+	float:left;
+}
+
+#dropAU{
+	height:30px;
+	width:15px;
+	background-image:url(images/yellowdrop.png);
+	background-repeat:no-repeat;
+	margin:68px 0px 0px 14px;
+	float:left;
+}
+
+/*columns*/
+#lefttcol{
+	width:400px;
+	height:650px;
+	float:left;
+	margin:75px 0px 0px 140px;
+	padding:0px;
+}
+
+
+#rightcol{
+	width:380px;
+	height:3o0px;
+	margin:40px 0px 0px 15px;
+	float:left;
+	
+}
+	
+ /*Text & Headers---------------------------------------------*/
+h1{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;
+	
+}
+
+ h2 {
+	color:#803a2f;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:16px;
+	margin-top:10px;
+	margin-bottom:8px;
+	margin-left:0px;
+}
+
+#rightcol h2 {
+	color:#003;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:12px;
+	margin-left:5px;
+}
+
+
+#rightcol p{
+	color:#00004d;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin-left:5px;
+	line-height:16px;
+}
+
+p{
+	color:#A54B3D;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin-top:-6px;
+	margin-left:0px;
+	line-height:16px;
+}
+
+h3{
+	font-weight:bold;
+	color:#A54B3D;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:16px;
+	margin-botoom:8px;
+	margin-top:10px;
+	margin-left:0px;
+}
+
+italicp{
+	color:#A54B3D;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:13px;
+	margin-top:-5px;
+	margin-left:0px;
+	line-height:16px;
+}
+
+largeitalicp{
+	color:#A54B3D;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:18px;
+	margin-top:-5px;
+	margin-left:0px;
+	line-height:16px;
+}
+
+
+
+ /*HOME -navigation--------------------------------------------------*/
+
+#hnav{
+	float:right; color:#000; height:40px; width:31ß0px;margin:15px 50px 0px 0px;
+}
+
+#hnav ul{
+	list-style-type:none;
+}
+
+#hnav li{
+	display:inline;
+	margin-left:20px;
+}
+
+
+#hnav a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#00004d; text-decoration:none; font-size:18px;
+}
+#hnav a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#00004d; text-decoration:none;font-size:18px;
+}
+
+#hnav a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:underline;font-size:18px;
+}
+
+#hnav a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:underline;font-size:18px;
+}
+
+/*HOME- FOOTER navigation--------------------------------------------------*/
+#hnavft{
+	float:right;clear:right; width:300px; height:50px;
+	margin:720px 180px 0px 0px;
+}
+
+#hnavft ul{
+	list-style-type:none;
+}
+
+#hnavft li{
+	display:inline;
+	margin-left:20px;
+}
+
+#hnavft a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+
+#hnavft a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D; text-decoration:none;
+}
+
+#hnavft a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+#hnavft a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+
+ /*PAGES- navigation--------------------------------------------------*/
+
+#pnav{
+	float:right;
+	color:#000;
+	height:100px;
+	width:140px;
+	margin:0px 55px 0px 0px;
+}
+#pnav ul{
+	list-style:none;
+}
+
+#pnav li{
+	text-decoration:none;
+	margin-bottom:10px;
+}
+
+.homelinkposition {
+	font-family: "Aldus LT Std Roman", "Times New Roman", serif;
+	font-size: 19px;
+	color: #FFFFFF;
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	float: right;
+	clear: both;
+	margin-top: 35px;
+	margin-right: 315px;
+}
+
+#pnav a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#00004d;text-decoration:none;
+}
+
+#pnav a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#00004d;text-decoration:none;
+}
+
+#pnav a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;
+	text-decoration:underline; 
+	}
+
+#pnav a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;font-weight:200; text-decoration:underline;
+	}
+
+/*PAGES- FOOTER navigation--------------------------------------------------*/
+#pnavft{
+	float:left;
+	clear:both;
+	width:300px;
+	height:50px;
+	margin:-60px 0px 0px 140px;
+}
+
+#pnavft ul{
+	list-style-type:none;
+}
+
+#pnavft li{
+	display:inline;
+	margin-left:20px;
+}
+
+#pnavft a:link{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;text-decoration:none;
+}
+
+#pnavft a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#A54B3D;
+	text-decoration:none;
+}
+
+#pnavft a:active{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+#pnavft a:hover{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#F7B86A;text-decoration:underline;
+}
+
+
+#logo{
+	height:75px;
+	width:95px;
+	margin:0px 0px 0px 10px;
+	float:left;
+	clear:left;
+	}
+
+/*BACK TO HOME PAGE navigation--------------------------------------------------*/
+
+
+#backhome{
+	float:left;
+	clear:left;
+	width:90px;
+	height:120px;
+	margin:0px 0px 0px 50px;
+}
+
+#backhome ul{
+	list-style-type:none;
+}
+
+#backhome li{
+	display:inline;
+	margin-left:20px;
+}
+
+#backhome a:link { text-decoration:none;}
+
+#backhome a:visited{text-decoration:none;}
+
+#backhome a:active{text-decoration:none;}
+
+#backhome a:hover{text-decoration:none;}
+
+
+

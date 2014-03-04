@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Books and Company</title>
+<link rel="stylesheet" type="text/css" href="BACstyle.css">
+
+<script>
+
+function goto(id, t){	
+	//animate to the div id.
+	$(".contentbox-wrapper").animate({"left": -($(id).position().left)}, 600);
+	
+	// remove "active" class from all links inside #nav
+    $('#nav a').removeClass('active');
+	
+	// add active class to the current link
+    $(t).addClass('active');	
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="homepage">
+    <div id="homeimg">
+        <div id="hnav">
+            <ul>
+                
+                <li> <a href="shelf3.html#about">Welcome</a></li>
+                <li> <a href="shelf3.html#contact">Contact</a></li>
+                <li> <a href="shelf3.html#events">Events</a></li>
+                <li> <a href="shelf3.html#goods">Goods</a></li>
+                <li> <a href="shelf3.html#books">Books</a></li> 
+                <li> <a href="shelf3.html#cafe">Cafe</a></li> 
+                
+            </ul>
+        </div><!--END of hnav-->
+    </div><!--END of homeimg-->
+</div> <!--END of homepage-->
+
+
+      <div id="footer">
+        <p>1235 Whitney Ave, Hamden, CT
+        &nbsp;&nbsp&nbsp;&nbsp;Tele: 203-248-9449  
+        &nbsp;&nbsp&nbsp;&nbsp;Weekly Hours: Mon-Wed 9am-6pm Thurs-Fri 9am-8pm Sat 9am-6pm Sun 10am-5pm</p>
+      </div> <!--END of footer-->
+
+   
+
+</div> <!--END of Wrapper-->
+
+</body>
+</html>
