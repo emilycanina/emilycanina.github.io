@@ -1,0 +1,198 @@
+	body {margin: 0; background-color: white;}
+	a {text-decoration: none;}
+	ul {list-style-type: none;}
+
+
+	#content {background-color: white; height: 100%; width:100%; margin-left: auto; margin-right: auto; font-size: 16 }
+	#logo {
+			position: absolute;
+			height: 150px; 
+			width: 150px; 
+			margin-left: 40%;
+			margin-right: 40%;
+			margin-top: 10px;
+			z-index: 10;
+		}
+
+	#banner {height:200px; width: 750px; margin: 0px; padding: 0px; position: relative;}
+
+
+/* mainnav */
+	#mainnav {
+				position: absolute;
+				height: 5%; 
+				width: 100%; 
+				opacity: 0.7;
+				top: 180px;
+				background-color: white;
+				padding-top: 2px; padding-right: 0px; padding-bottom: 2px; padding-left: 1%;
+				z-index: 15;
+			}
+
+	#mainnav ul {margin: 0px; padding: 0px; }
+	#mainnav li {
+					display: inline; 
+					overflow: hidden; 
+					margin-left: 6%; 
+					font-size: 75%; 
+					font-family: arial;
+					font-weight: bold;
+				}
+	#mainnav a:link {color: black;}
+	#mainnav a:visited {color: black}
+	#mainnav a:hover {color: rgb(85,141,69);}
+	#mainnav a:active {color: rgb(85,141,69);}
+
+/* paragraph and heading styles */
+	h1 {font-family: baskerville; font-size: 250%; color: black; text-align: center; margin-top:15px;}
+	h2 {font-family: baskerville; font-size: 180%; color: black; margin-left: 4%;}
+	h3 {font-family: arial; font-size: 125%; color: black;}
+	p {font-family: arial; font-size: 100%; color: black;}
+	#sidebar p {line-height: 1.4em;}
+
+
+/* classes */
+	.center {text-align: left;}
+	.centerimg {display: block; margin-left: 0%; float: left;}
+	.titleindent {text-indent: 70px;}
+	.homeindent {text-indent: 20px;}
+	.indent {}
+	.float{float: left;}
+	.next {margin-bottom: 5px;display:inline;}
+	.subtitle {font-family: arial; font-size: 16px; color: rgb(85,141,69); font-weight: bold;}
+	.inline {display:inline; float: left; margin-right: 5px; margin-left: 5px;}
+	.inline2 {display: inline; margin-left: 2px; margin-right: 2px;}
+	.border {border-style:double; border-color:blue;}
+	.green {color: rgb(85,141,69);}
+	.red {background-color: red;}
+	.floatright {float:right; width: 70%; }
+	.floatleft {float:left;  width: 100%; font-size: 93.8%; }
+
+/* home page */
+	#newsfeed {
+				height: 400px; 
+				width: 85%; 
+				margin-left: 7%;
+				margin-right: 7%;			
+				border: solid;
+				border-color:black;
+				position: relative;
+			}
+
+	#facebookFeeds{ 
+			}
+
+	#craigslistFeeds{
+
+			}
+
+
+
+
+	#sidebar {
+				height: auto; 
+				width: 72.5%; 
+				padding: 7% 7% 7% 7%;
+				margin:4% 7% 4% 7%;
+				background-color:#ffddc0;
+				position: relative;
+			}
+/*(230,233,222) */
+/* credit for the social media icons goes to © 2013 Creative Nerds, Inc. All rights reserved */
+
+
+/* inside pages */
+	#maindiv {
+				height: auto; 
+				width: 600px; 
+				margin-left: 50px;
+				margin-bottom: 30px;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				float: left;
+				background-color: #ffddc0;
+				position:relative;
+			}
+
+/* about page */
+	#apicture {margin-left:20px; float: left;}
+		
+	#ainfo  {width: 365px; height: 140px; float: left;}
+	#ainfo ul {margin: 0px;}
+	#ainfo li {margin-bottom: 5px; font-family: arial; font-size: 14px;}
+	#adescription {
+					padding-left: 10px; 
+					padding-right: 10px; 
+					margin-left: 10px;
+					margin-right: 10px; 
+					float: left;
+				}
+
+/* exclusive listings page */
+
+/* team triology page */
+		
+	#ttjosh  {
+				width: 180px; 
+				height: 180px; 
+				float: left; 
+				font-family: arial; 
+				font-size: 14px;
+				margin-left: 20px;
+				margin-right: 10px;
+			}
+	#ttjosh li {margin-left: -40px;}
+	#ttdevon  {
+				width: 180px; 
+				height: 180px; 
+				float: left; 
+				font-family: arial; 
+				font-size: 14px; 
+				margin-right: 10px;
+			}		
+	#ttdevon li {margin-left: -40px;}	
+
+	#ttgreg  {
+				width: 180px; 
+				height: 180px; 
+				float: left; 
+				font-family: arial; 
+				font-size: 14px; 
+			}
+	#ttgreg li {margin-left: -40px;}
+
+
+	#ttdescription {
+					padding-left: 10px; 
+					padding-right: 10px; 
+					margin-left: 10px;
+					margin-right: 10px; 
+					padding-top: 0px;
+					float: left;
+				   }
+
+
+/* inside pages -- sidediv */
+			
+			#sidediv {
+						height: 1000px; 
+						width: 200px; 
+						padding: 5px; 
+						margin-left: 50px; 
+						float: left;
+					}
+
+			#sidediv ul {margin: 0px; padding: none;}
+			#sidediv li {margin-bottom:10px;}
+
+	
+/* footer */
+
+	footer {
+		height: 20px; 
+		width: 968px; 
+		font-family: arial; font-size: 14px;
+		float: left;
+			}
+	footer ul{margin: 0px; padding: none;}
+	footer li{display: inline; overflow: hidden; margin-left: 85px; margin-right: 0px;}
