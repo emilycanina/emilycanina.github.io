@@ -8,8 +8,8 @@ body{
 }
 	
 #wrapper{
-	height:768px;
-	width:960px;
+	width:100%;
+	height:100%;
 }
  
  /*Header---------------------------------------------*/
@@ -17,9 +17,7 @@ body{
 	clear:both;
 	float:left;
 	position:relative;
-	margin-top:20px;
-	margin-bottom:57px;
-	margin-left:180px;
+	margin:30px 0 40px 180px;
 }
 
 #header h1{
@@ -41,22 +39,39 @@ body{
 
  /*top nav ------------------------------*/
 #topnav{
-	float:left;
-	color:#906; 
-	height:20px; 
-	width:350px; 
-	margin-left:85px; 
-	margin-top:10px; 
+	height:80px; 
+	width:80%; 
+	top:50px;
 	position:relative; 
-	z-index:500;}
+	color:#906; 
+	background: red;
+		}
 
 #topnav ul {list-style-type:none;}
-#topnav li {display:inline; margin-left:55px;}
-#topnav a:link {font-family:"Century Gothic"; color:#770062; text-decoration:none; font-size:15px;}
-#topnav a:visited {font-family:"Century Gothic"; color:#770062; text-decoration:none;font-size:15px;}
-#topnav a:active {font-family:"Century Gothic"; color:#96C; text-decoration:none;font-size:15px;}
-#topnav a:hover {font-family:"Century Gothic"; color:#96C; text-decoration:none;font-size:15px;}
+#topnav li {display:inline-block; margin: 0 .5% 0 .5%; font-family:"Century Gothic";}
+#topnav a:link {color:#770062; text-decoration:none; font-size:15px;}
+#topnav a:visited {color:#770062; text-decoration:none;font-size:15px;}
+#topnav a:active {color:#96C; text-decoration:none;font-size:15px;}
+#topnav a:hover {color:#96C; text-decoration:none;font-size:15px;}
 	
+
+#topnav a 
+	{ 	display: block;
+		width:180px;
+		height:180px;
+		overflow: hidden;
+		text-indent: -999;
+		
+		}
+
+
+a.blogger{
+	background: url(../images/icons/blogger.png);
+}
+a.email{
+	background: url(../images/icons/email.png);
+}
+
 /*image------------------------------*/	
  #image{
 			width:250px;
@@ -66,46 +81,13 @@ body{
 			background-image:url(../images/mypic.png);
 			}
 
-/*contact------------------------------*/
-		#contact {
-			width:300px;
-			height:250px;
-			float:left;
-			margin-top:-300px;
-			margin-left:480px;
-		}
-		
-			#contact p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}
-			
- /*Contact Nav------------------------------*/
-#contactnav {
-	width:300px; 
-	height:100px;
-	}
-
-#contactnav ul {list-style-type:none; font-family:"Century Gothic"; font-size:14px;}
-
-#contactnav ul li { display:inline-block; margin-top:10px; margin-left:15px;}
-	
-/**#contactnav li.cell {width:75px; height:100px; background-image:url(../images/cellphone.png);}**/
-
-/**#contactnav li.email {width:100px; height:100px;}*/
-
-/**#contactnav li.linkedin {width:75px; height:100px;}*/
-
-#contactnav a:visited {color:red; text-decoration:none;}
-#contactnav a:link {color:red; text-decoration:none;}
-#contactnav a:active {color:red; text-decoration:none;}
-#contactnav a:hover {color:red; text-decoration:none;}
-
 
      /*content------------------------------*/
 		#content {
 			width:600px;
 			height:800px;
 			clear:both;
-			margin-top:1px;
-			margin-left:180px;
+			margin:1px 0px 0px 180px;
 		}
 	
 /*sketch Button on Project Pages PAGES------------------------------*/	
@@ -149,14 +131,7 @@ body{
 #sketchcontent p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}		
 #sketchcontent h1 {font-family:"Century Gothic"; font-size:18px; color:black; line-height:1.1;}
 
-			
-/*market 1------------------------------*/
-	ul.marketing {list-style-type:none; margin-bottom:20px; margin-left:180px; float:left; display:inline;}
-	ul.marketing li {float:left; width:auto; height:100px; margin-bottom:20px;}
-	ul.marketing li.img {margin:0; padding:0; width:100px; margin-right:10px;}
-	ul.marketing li.text {width:600px; margin-top:-8px;}
-	ul.marketing li.text h2 {font-size:14px; font-family:"century gothic";}
-	ul.marketing li.text h3 {font-size:12px; font-style:italic;}	
+		
 
 		
  /*MAIN div---------------------------------------------*/	
@@ -220,8 +195,8 @@ body{
 	position:fixed; 
 	color:#906;  
 	width:100px; 
-	left:10px; 
-	top:102px; 
+	left:-40px; 
+	top:80px; 
 	z-index:100;
 	}
 
@@ -229,12 +204,11 @@ body{
 
 #boxnav ul li {margin-top:20px; width:100px; height:60px;}
 	
-#boxnav li.green {width:100px; height:60px;background-color:rgba(180,209,56,1.0); padding-top:40px; padding-bottom:-40px;}/*background-color:#B4D138; */
-#boxnav li.purple {width:100px; height:60px;background-color:rgba(119,0,98,1.0); padding-top:40px; padding-bottom:-40px;}/*background-color:#770062*/
-#boxnav li.blue {width:100px; height:60px; background-color:rgba(0,186,193,1.0);padding-top:40px; padding-bottom:-40px;}
+#boxnav li.green {background-color:rgba(180,209,56,1.0); padding-top:40px;}/*background-color:#B4D138; */
+#boxnav li.purple {background-color:rgba(119,0,98,1.0); padding-top:40px;} /*background-color:#770062*/
+#boxnav li.blue {background-color:rgba(0,186,193,1.0);padding:30px 0px 10px 0px}
 
 #boxnav a:visited {color:white; text-decoration:none;}
-
 #boxnav a:link {color:white; text-decoration:none;}
 #boxnav a:active {color:white; text-decoration:none;}
 #boxnav a:hover {color:white; text-decoration:none;}

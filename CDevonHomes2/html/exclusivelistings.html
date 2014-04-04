@@ -4,7 +4,8 @@
 	<title>C. Devon Homes | Exclusive Listings</title>
 
 	<link href="file:///Users/Emilycanina/Desktop/CDevonHomes/css/style.css" type="text/css" rel="stylesheet" />
-
+<script type="text/javascript"></script>
+<script type="text/javascript"></script>
 </head>
 
 <body>
@@ -34,6 +35,24 @@
 
 <h2 class="titleindent"> Exclusive Listings</h2>
 <div id="maindiv"> 
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+    <li>
+      <img src="slide4.jpg" />
+    </li>
+    <!-- items mirrored twice, total of 12 -->
+  </ul>
+</div>
 </div>
 
 <div id="sidediv"> 
@@ -72,8 +91,17 @@
 		<li> (617) 997-5513 </li>
 	</ul>
 	</footer>
-
-
 </div>
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+  });
+});
+</script>
+
 </body>
 </html>
