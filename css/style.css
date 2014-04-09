@@ -15,11 +15,26 @@ body{
 h1{ 
 	font-family:"Century Gothic"; 
 	color:rgba(0,186,193,1.0);
-	margin:60px 0px 55px 180px; 
+	margin:60px 0px 15px 180px; 
 	font-size:40px; 
 	font-weight:400;
 	float: left;
+
 }
+
+h2{
+	font-family:"Century Gothic"; 
+	margin:0px 0px 18px 180px; 
+	font-size:25px; 
+	font-weight:400;
+	clear: both;
+}
+
+.about h2{color:rgba(180,209,56,1.0);}
+
+.mobile h2{color:rgba(0,186,193,1.0);}
+
+.web h2{color:rgba(119,0,98,1.0);}
 
  /*top nav ------------------------------*/
 #topnav{
@@ -45,31 +60,19 @@ h1{
 		text-indent: -999;	
 		}
 
-
-a.blogger{
-	background: url(../images/icons/blogger.png);
-}
-a.email{
-	background: url(../images/icons/email.png);
-}
-a.resume{
-	background: url(../images/icons/resume.png);
-}
-a.cell{
-	background: url(../images/icons/cell.png);
-}
-a.linkedin{
-	background: url(../images/icons/linkedin.png);
-}
+a.blogger {background: url(../images/icons/blogger.png);}
+a.email {background: url(../images/icons/email.png);}
+a.resume {background: url(../images/icons/resume.png);}
+a.cell {background: url(../images/icons/cell.png);}
+a.linkedin {background: url(../images/icons/linkedin.png);}
 /*image------------------------------*/	
- #image{
-			width:250px;
-			height:300px;
-			margin-left:180px;
-			clear:both;
-			background-image:url(../images/mypic.png);
-			}
-
+ #image {
+		width:250px;
+		height:300px;
+		margin-left:180px;
+		clear:both;
+		background-image:url(../images/mypic.png);
+		}
 
      /*content------------------------------*/
 		#content {
@@ -86,8 +89,6 @@ a.linkedin{
 
 .sketchicon, .sketchicon a{
 	float:left;
-	padding:0;
-	margin:0;
 	position:relative;
 	display: block;
 }
@@ -100,8 +101,6 @@ a.linkedin{
 
 .sketchback, .sketchback a{
 	float:left;
-	padding:0;
-	margin:0;
 	position:relative;
 	display: block;
 }
@@ -110,69 +109,60 @@ a.linkedin{
 					
      /*sketchcontent Pages of Sketches PAGES------------------------------*/ 
 		#sketchcontent {
-			width:674px;
-			height:800px;
-			clear:both;
-			margin-left:180px;
-			/*--border-style:solid;
-			border-color:black;--*/
-		}
+						width:674px;
+						height:800px;
+						clear:both;
+						margin-left:180px;
+						}
+
 #sketchcontent p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}		
-#sketchcontent h1 {font-family:"Century Gothic"; font-size:18px; color:black; line-height:1.1;}
-
+#sketchcontent h1 {font-family:"Century Gothic"; font-size:18px; color:black; line-height:1.1;}	
 		
-
-		
- /*MAIN div---------------------------------------------*/	
-  #main {
-	  	height:340px; 
-		width:420px;
-		clear:both;
-		margin-left:180px;
-		}
+ /*mywork---------------------------------------------*/	
+	.mywork {float:left; clear: both; margin:0px 0px 100px 180px;}
 	
 	/*printnav PAGES---------------------------------------------*/
 		#projectnav {			
-					color:#906; 
 					height:75px; 
 					width:450px;
+					color:#906; 
+					position: fixed;
 					float:left; 
-					margin-left:180px; 
-					margin-top:0px; 
+					margin:430px 0px 0px 960px;
 				}
 			
 		#projectnav ul {list-style-type:none;}
-		#projectnav li {display:inline; margin-right:50px; margin-left:0px;}		
+		#projectnav li {display:inline-block; margin-right:50px; margin-left:0px;}		
 		#projectnav a:link {font-family:"Century Gothic";}		
 		#projectnav a:visited {font-family:"Century Gothic";}		
 		#projectnav a:active {font-family:"Century Gothic";}		
 		#projectnav a:hover {font-family:"Century Gothic";}
 
-		#projectnav h3{font-family:"century gothic"; font-size:12px; color:black; font-style:italic;margin-top:0px;}
+		#projectnav h3{
+						font-family:"century gothic";
+						font-size:12px; 
+						color:black; 
+						float:right;
+						font-style:italic;
+					}
 		
 		   	 /*caption PAGES---------------------------------------------*/			
 			    #caption{
-					width:420px;
-					margin-left:180px;
-					margin-top:0px;
-					float:left;
-					position:relative;
+					width:220px;
+					position:fixed;
+					margin:-22px 0px 0px 1000px;
+					float: left;
 					}
 				
-				#caption p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1;}
-				#caption p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1; margin-top:15px;}
-				#caption h1 {font-family:"Century Gothic"; font-size:18px; color:black; margin-top:0px; margin-bottom:-5px;}
-
-	   	  /*caption PAGES---------------------------------------------*/			
-			 #captiongrocer{
-				width:420px;
-				margin-left:0px;
-				margin-top:0px;
-				float:left;
-				position:relative;}
-				
-			 #captiongrocer p {font-family:"Garamond"; font-size:16px; color:black; line-height:1.1; margin-top:15px;}
-			 #captiongrocer h1 {font-family:"Century Gothic"; font-size:18px; color:black; margin-top: 20px; margin-bottom:-5px;}
+				#caption p {
+					font-family:"Garamond"; 
+					font-size:16px; 
+					line-height:1.1; 
+						}
+				#caption h3 {
+					font-family:"Century Gothic"; 
+					font-size:18px;
+					}
 
  /*box nav ALL------------------------------*/
 #boxnav {
