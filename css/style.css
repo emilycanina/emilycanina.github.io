@@ -15,7 +15,7 @@ body{
 h1{ 
 	font-family:"Century Gothic"; 
 	color:rgba(0,186,193,1.0);
-	margin:60px 0px 15px 180px; 
+	margin:60px 0px 15px 15%; 
 	font-size:40px; 
 	font-weight:400;
 	float: left;
@@ -24,7 +24,7 @@ h1{
 
 h2{
 	font-family:"Century Gothic"; 
-	margin:0px 0px 18px 180px; 
+	margin:0px 0px 18px 15%; 
 	font-size:25px; 
 	font-weight:400;
 	clear: both;
@@ -37,26 +37,26 @@ h2{
 .web h2{color:rgba(119,0,98,1.0);}
 
  /*top nav ------------------------------*/
-#topnav{
-	width:250px;
-	left:10%;
-	top:10px;
+#contactnav{
+	width:600px;
+	left:15%;
+	top:80px;
 	float:left;
 	position:relative; 
 		}
 
-#topnav ul {list-style-type:none;}
-#topnav li {display:inline-block;  font-family:"Century Gothic"; margin-left: 10px;}
-#topnav li:first-child {margin-left:-30px;}
-#topnav a:link {color:#770062; text-decoration:none; font-size:15px;}
-#topnav a:visited {color:#770062; text-decoration:none;font-size:15px;}
-#topnav a:active {background-position: bottom;}
-#topnav a:hover {background-position: bottom;}
-#topnav a 
+#contactnav ul {list-style-type:none; padding: 0px 0px 0px 0px;}
+#contactnav li {display:inline-block;  font-family:"Century Gothic"; margin: 0px 50px 0px 0px;}
+#contactnav a:link {color:#770062; text-decoration:none; font-size:15px;}
+#contactnav a:visited {color:#770062; text-decoration:none;font-size:15px;}
+#contactnav a:active {background-position: bottom;}
+#contactnav a:hover {background-position: bottom;}
+#contactnav a 
 	{ 	display: block;
-		width:32px;
-		height:32px;
+		width:100px;
+		height:100px;
 		overflow: hidden;
+		margin-bottom: 10px;
 		text-indent: -999;	
 		}
 
@@ -69,7 +69,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
  #image {
 		width:250px;
 		height:300px;
-		margin-left:180px;
+		margin-left:15%;
 		clear:both;
 		background-image:url(../images/mypic.png);
 		}
@@ -79,64 +79,28 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 			width:600px;
 			height:800px;
 			clear:both;
-			margin:1px 0px 0px 180px;
+			margin:1px 0px 0px 15%;
 		}
-	
-/*sketch Button on Project Pages PAGES------------------------------*/	
-#sketch {width:100px; clear:both; float:left; margin-top:-580px; margin-left:680px;}	
-		
-#sketch p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}
-
-.sketchicon, .sketchicon a{
-	float:left;
-	position:relative;
-	display: block;
-}
-
-.sketchicon img {display:block;}
-
-/*sketchback PAGES  Back Button ------------------------------*/	
-#sketchback {width:200px; float:right; margin-top:-800px; margin-right:0px;}		
-#sketchback p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}
-
-.sketchback, .sketchback a{
-	float:left;
-	position:relative;
-	display: block;
-}
-
-.sketchback img {display:block;}
-					
-     /*sketchcontent Pages of Sketches PAGES------------------------------*/ 
-		#sketchcontent {
-						width:674px;
-						height:800px;
-						clear:both;
-						margin-left:180px;
-						}
-
-#sketchcontent p {font-family:"Century Gothic"; font-size:16px; color:black; line-height:1.1;}		
-#sketchcontent h1 {font-family:"Century Gothic"; font-size:18px; color:black; line-height:1.1;}	
 		
  /*mywork---------------------------------------------*/	
-	.mywork {float:left; clear: both; margin:0px 0px 100px 180px;}
+	.mywork {float:left; clear: both; margin:0px 0px 0px 15%; max-width: 70%; max-height: 70%;}
 	
 	/*printnav PAGES---------------------------------------------*/
 		#projectnav {			
 					height:75px; 
-					width:450px;
+					width:800px;
 					color:#906; 
-					position: fixed;
 					float:left; 
-					margin:430px 0px 0px 960px;
+					margin:0px 0px 0px 15%;
 				}
 			
-		#projectnav ul {list-style-type:none;}
-		#projectnav li {display:inline-block; margin-right:50px; margin-left:0px;}		
-		#projectnav a:link {font-family:"Century Gothic";}		
-		#projectnav a:visited {font-family:"Century Gothic";}		
-		#projectnav a:active {font-family:"Century Gothic";}		
-		#projectnav a:hover {font-family:"Century Gothic";}
+		#projectnav ul {list-style-type:none; padding-left:0;}
+		#projectnav li {display:inline; margin-right:10px; border-right: 2px solid; padding-right: 10px;}
+		#projectnav li:last-child {border-right: none;}
+		#projectnav a:link {font-family:"Century Gothic";text-decoration:none;}		
+		#projectnav a:visited {font-family:"Century Gothic";text-decoration:none;}		
+		#projectnav a:active {font-family:"Century Gothic";text-decoration:none;}		
+		#projectnav a:hover {font-family:"Century Gothic";text-decoration:none; color:rgba(0,186,193,1.0);}
 
 		#projectnav h3{
 						font-family:"century gothic";
@@ -148,9 +112,8 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 		
 		   	 /*caption PAGES---------------------------------------------*/			
 			    #caption{
-					width:220px;
-					position:fixed;
-					margin:-22px 0px 0px 1000px;
+					width:600px;
+					margin:0px 0px 30px 15%;
 					float: left;
 					}
 				
@@ -176,7 +139,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 	}
 
 #boxnav ul {
-			 list-style-type:none; 
+			list-style-type:none; 
 			text-align:center; 
 			font-family:"Century Gothic"; 
 			padding-top:40px; 
@@ -187,7 +150,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 	
 #boxnav li.green {background-color:rgba(180,209,56,1.0); padding-top:40px;}/*background-color:#B4D138; */
 #boxnav li.purple {background-color:rgba(119,0,98,1.0); padding-top:40px;} /*background-color:#770062*/
-#boxnav li.blue {background-color:rgba(0,186,193,1.0);padding:30px 0px 10px 0px}
+#boxnav li.blue {background-color:rgba(0,186,193,1.0);padding-top:40px;}
 
 #boxnav a:visited {color:white; text-decoration:none;}
 #boxnav a:link {color:white; text-decoration:none;}
