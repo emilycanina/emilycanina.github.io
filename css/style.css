@@ -81,6 +81,8 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 			clear:both;
 			margin:1px 0px 0px 15%;
 		}
+
+		#content p {font-family: "Garamond";}
 		
  /*mywork---------------------------------------------*/	
 	.mywork {float:left; clear: both; margin:0px 0px 0px 15%; max-width: 70%; max-height: 70%;}
