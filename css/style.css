@@ -24,7 +24,7 @@ h1{
 
 h2{
 	font-family:"Century Gothic"; 
-	margin:0px 0px 18px 15%; 
+	margin:0px 0px 0px 15%; 
 	font-size:25px; 
 	font-weight:400;
 	clear: both;
@@ -79,20 +79,26 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 		#content p {font-family: "Garamond";}
 		
  /*mywork---------------------------------------------*/	
-	.mywork {float:left; clear: both; margin:0px 0px 10px 15%; max-width: 70%; max-height: 70%;}
+	.mywork {float:left; clear: both; margin:0px 0px 20px 15%; max-width: 70%; max-height: 70%; border: 0.5px solid black; box-shadow:2px 2px #D0D0D0; }
 	
 	/*printnav PAGES---------------------------------------------*/
 		#projectnav {			
 					height:75px; 
-					width:800px;
+					width:90%;
 					color:#906; 
 					float:left; 
-					margin:0px 0px 0px 15%;
+					margin:0px 0px 10px 15%;
 				}
 			
 		#projectnav ul {list-style-type:none; padding-left:0;}
-		#projectnav li {display:inline; margin-right:10px; border-left: 1px solid; padding-right: 10px;}
-		#projectnav li:last-child {border-style: hidden;}
+		#projectnav li {
+							display:inline-block; 
+							margin-right:10px; 
+							padding-right:10px; 
+							width:150px; 
+							height:50px; 
+							border-top: 10px black;
+							}
 		#projectnav a:link {font-family:"Century Gothic";text-decoration:none;}		
 		#projectnav a:visited {font-family:"Century Gothic";text-decoration:none;}		
 		#projectnav a:active {font-family:"Century Gothic";text-decoration:none;}		
@@ -186,7 +192,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 #brandnav a:active{color:rgba(180,209,56,1.0); text-decoration:none;}
 #brandnav a:hover{color:rgba(180,209,56,1.0); text-decoration:none;}
 
-@media screen and (max-width: 800px) and (min-width: 500px){
+@media screen and (max-width: 780px) and (min-width: 500px){
 
 		#boxnav {width:80%; margin: 0 10% 0 10%; top:0px; position: relative;}
 		#boxnav ul {padding-top: 30px;}
@@ -196,12 +202,11 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 		#boxnav li.purple {padding-top:30px;} 
 		#boxnav li.blue {padding-top:30px;}
 
-		#projectnav {height:75px; width:80%; margin: 0 10% 0 10%; float:none; margin:auto;}
-					
-			#projectnav ul {list-style-type:none; padding-left:0; text-align: center; border-style: none;}
-			#projectnav li {display:list-item; margin-right:10px; border-right: 2px solid; padding-right: 10px;}
+		#projectnav {height:75px; width:80%; margin: 0 10% 20px 10%; float:none;}				
+			#projectnav ul {list-style-type:none; padding-left:0; text-align: center;}
+			#projectnav li {display: inline-block; margin-right:10px; padding-right: 10px;}
 
-		#content {width:80%; height:800px; clear:both; margin:1px 10% 0px 10%;}
+		#content {width:80%; height:800px; margin:1px 10% 0px 10%;}
 		
 		#caption {width:80%; margin:1px 10% 0px 10%;float: left;}
 				
@@ -213,21 +218,33 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 
 		#boxnav {width:100%; margin: 0; top:0px; position: relative;}
 		#boxnav ul {padding-top: 40px;}
-		#boxnav ul li {margin:0px 0px 0px 0px; width:70px; height:40px; display: inline-block; font-size: 16px; }
+		#boxnav ul li {margin:0px 0px 0px 1%; width:70px; height:40px; display: inline-block; font-size: 16px; }
 
 		#boxnav li.green {padding-top:20px;}
 		#boxnav li.purple {padding-top:20px;} 
 		#boxnav li.blue {padding-top:20px;}
 
-		#projectnav {height:75px; width:80%; margin: 0 10% 0 10%; float:none; margin:auto;}
-					
+		#projectnav {height:75px; width:80%; margin: 0 10% 130px 10%; float:none;}		
 			#projectnav ul {list-style-type:none; padding-left:0; text-align: center; border-style: none;}
-			#projectnav li {display:list-item; margin-right:10px; border-right: 2px solid; padding-right: 10px;}
+			#projectnav li {display:list-item; margin: 0 10% 0px 20%;}
+
 		#content {width:80%; height:800px; clear:both; margin:1px 10% 0px 10%;}
 
 		#caption {width:80%; margin:1px 10% 0px 10%;float: left;}
 		#caption p {font-size:15px; line-height:1.1; }
 		#caption h3 {font-size:17px;}
+
+		/*mywork---------------------------------------------*/	
+	.mywork {
+				float:left; 
+				clear: both; 
+				margin:0px 0px 20px 5%; 
+				max-width: 90%; 
+				max-height: 90%; 
+				border: 0.5px 
+				solid black; 
+				box-shadow:2px 2px #D0D0D0; 
+			}
 }
 
 
