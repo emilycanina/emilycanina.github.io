@@ -186,7 +186,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 #brandnav a:active{color:rgba(180,209,56,1.0); text-decoration:none;}
 #brandnav a:hover{color:rgba(180,209,56,1.0); text-decoration:none;}
 
-@media all and (max-width: 800px) and (min-width: 500px){
+@media screen and (max-width: 800px) and (min-width: 500px){
 
 		#boxnav {width:80%; margin: 0 10% 0 10%; top:0px; position: relative;}
 		#boxnav ul {padding-top: 30px;}
@@ -209,7 +209,7 @@ a.linkedin {background: url(../images/icons/linkedin.png);}
 		#caption h3 {font-size:18px;}
 }
 
-@media all and (max-width: 500px) and (min-width:0px){
+@media screen and (max-width: 500px) and (min-width:0px){
 
 		#boxnav {width:100%; margin: 0; top:0px; position: relative;}
 		#boxnav ul {padding-top: 40px;}
