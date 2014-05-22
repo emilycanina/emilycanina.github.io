@@ -86,8 +86,8 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	h2 {font-family:'Merriweather', serif;  font-size: 150%; color: black;}
 	h3 {font-family:'Merriweather', serif;  font-size: 115%; color: black;}
 	p {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; color: black; }
-	#sidebar p {line-height: 1.1em; 16px; color: black;}
-	#sidebar p {line-height: 1.1em;}
+	#sidebar p {line-height: 1.1em; font-size:16px; color: black;}
+	#sidebar a {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; }
 
 /* classes */
 	.center {text-align: center; margin-left: -10px;}
@@ -195,14 +195,14 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 
 /* inside pages -- sidediv */
 			
-			#sidediv {
+			/*#sidediv {
 						padding: 11px 20px 50px 20px;
 						margin-left: 50px; 
 						float: left;
 					}
 
 			#sidediv ul {margin: 0px; padding: none;}
-			#sidediv li {margin-bottom:30px;}
+			#sidediv li {margin-bottom:30px;} */
 
 	
 /* footer */
@@ -220,6 +220,8 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	footer li{display: inline-block; margin-left: 0; margin-right: 0;}
 
 	@media screen and (max-width:740px){
+		h1{ font-size: 200%; text-align: center;}
+
 	#banner {
 		background-image: none;
 		background-color:rgb(215,241,217);
@@ -232,21 +234,19 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	}
 	/* main nav */
 	#mainnav {
-		text-align: center;
+		text-align:center;
 		background-color:none;
-		height: auto;
-		clear: both;
-		position: absolute;
-		z-index: 10000;
-		top: 0px;
-		padding: 5px;
+		height:auto;
+		clear:both;
+		position:absolute;
+		z-index:10000;
+		top:0px;
+		padding:5px;
 		}
 
-	#mainnav li{ display: block; padding: 1px 0px 1px 0px;
-		margin: 0 0px 0 0px; }
+	#mainnav li{ display: block; padding: 1px 0px 1px 0px; margin: 0 0px 0 0px; }
 
 	#mainnav li:first-child {margin-left:0px; }
-
 
 	#mainnav a:link {
 		display: inline-block; 
@@ -264,14 +264,14 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	#sidebar{ 
 		float:none;
 		clear: both; 
-		width: 100%; margin: 10px 0px 0px 0px}
-	#sidediv{ 
-		float:none;
-		clear:both; 
-		width:90%; margin: 3px 3% 3px 3%;}
+		width: 100%; 
+		margin: 10px 0px 0px 0px;
+		padding: 10px 10% 10px 10%;
+	}
 	#maindiv{width: 90%; margin: 3px 3% 3px 3%;}
 	#newsfeed{width: 90%; margin: 3px 3% 3px 3%;}
-	footer{}
+	footer a{color: white; font-weight: 400;}
+	footer p{color: black; font-weight: 500;}
 
 
 }

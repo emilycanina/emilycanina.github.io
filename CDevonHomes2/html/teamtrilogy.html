@@ -5,7 +5,24 @@
 
 <meta name ="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-<link rel="stylesheet" type="text/css" href="../css/font.css" charset="utf-8"/>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+
+	/* prepend menu icon */
+	$('#mainnav').prepend('<div id="menu-icon">Menu</div>');
+	
+	/* toggle nav */
+	$("#menu-icon").on("click", function(){
+		$("#nav").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+});
+
+</script>
 
 </head>
 
@@ -21,16 +38,15 @@
 </div>
 
 
-<div id="mainnav">
-
-	<ul>
-		<li><a href="index.html"> Home </a></li>
-		<li><a href="about.html"> About </a></li>
-		<li><a href="exclusivelistings.html"> Exclusive Listings </a></li>
-		<li class ="green"> <a href="teamtrilogy.html"> Team Trilogy </a></li>
-		<li><a href="clienttestimonials.html"> Client Testimonials </a></li>
-	</ul>
-</div>
+	<div id="mainnav">
+		<ul id="nav">
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="about.html"> About </a></li>
+			<li><a href="exclusivelistings.html"> Exclusive Listings </a></li>
+			<li><a href="teamtrilogy.html"> Team Trilogy </a></li>
+			<li><a href="clienttestimonials.html"> Client Testimonials </a></li>
+		</ul>
+	</div> 
 
 <h2 class="titleindent"> Team Trilogy at Trio </h2>
 <div id="maindiv"> 
