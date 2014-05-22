@@ -2,7 +2,10 @@
 <html>
 <head>
 	<title>C. Devon Homes | Home</title>
-	<link href="file:///Users/Emilycanina/Desktop/CDevonHomes/css/style.css" type="text/css" rel="stylesheet" />
+
+	<meta name ="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/font.css" charset="utf-8"/>
 <!--
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
@@ -31,31 +34,47 @@
 			}
 		</script>
 		-->
+
+		<script type="text/javascript">
+jQuery(document).ready(function($){
+
+	/* prepend menu icon */
+	$('#mainnav').prepend('<div id="menu-icon"></div>');
+	
+	/* toggle nav */
+	$("#menu-icon").on("click", function(){
+		$("#nav").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+});
+
+</script>
+
 </head>
 
 <body>
 
-<div id="content"> 	
-<div id="logo">
-	<div>
-		<img src="file:///Users/Emilycanina/Desktop/CDevonHomes/images/cdhlogo.png">
-	</div>
-</div> <!--end of LOGO -->
+	<div id="mainnav">
+		<ul id="nav">
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="about.html"> About </a></li>
+			<li><a href="exclusivelistings.html"> Exclusive Listings </a></li>
+			<li><a href="teamtrilogy.html"> Team Trilogy </a></li>
+			<li><a href="clienttestimonials.html"> Client Testimonials </a></li>
+		</ul>
+	</div> 
+
+			<div id="logo">
+			 <div>
+				<img src="file:///Users/Emilycanina/Desktop/CDevonHomes/images/cdhlogo.png">
+			 </div>
+			</div> <!--end of LOGO -->
 
 <div id="banner"> 
-	<img src="file:///Users/Emilycanina/Desktop/CDevonHomes/images/bostonskyline.png" alt="Boston Skyline taken by Devon Holden.">
 </div>
 
 
-<div id="mainnav">
-	<ul>
-		<li><a href="index.html"> Home </a></li>
-		<li><a href="about.html"> About </a></li>
-		<li><a href="exclusivelistings.html"> Exclusive Listings </a></li>
-		<li><a href="teamtrilogy.html"> Team Trilogy </a></li>
-		<li><a href="clienttestimonials.html"> Client Testimonials </a></li>
-	</ul>
-</div> 
 
 <h1 class="homeindent"> C. Devon Homes Boston Area </h1>
 
@@ -122,17 +141,27 @@
 </div>
 
 	<footer>
-	<ul>
-		<li> C. Devon Homes </li>
-		<li> Devon@TrioRE.com </li>
-		<li> Trio Realestate Group </li>
-		<li> (617) 997-5513 </li>
-	</ul>
+		<h3> Connect </h3>
+
+				<li class="inline2"><a href="http://www.facebook.com" target="_blank"> <img src= "file:///Users/Emilycanina/Desktop/CDevonHomes/images/facebook2.png" alt="facebook.com"></li>
+
+				<li class="inline2"><a href="http://www.linkedin.com" target="_blank"> <img src= "file:///Users/Emilycanina/Desktop/CDevonHomes/images/linkedin2.png" alt="linkedin.com"></li>
+
+				<li class="inline2"><a href="http://www.youtube.com" target="_blank"> <img src= "file:///Users/Emilycanina/Desktop/CDevonHomes/images/youtube2.png" alt="youtube.com">
+			</li>
+
+					<h3> Find My Listings </h3>
+						<p><a href="http://www.truila.com" target="_blank"> Trulia </a></p>
+						<p><a href="http://www.zillow.com" target="_blank"> Zillow </a></p>
+						<p><a href="http://www.yougotlistings.com" target="_blank"> You Got Listings </a></p>
+						<p><a href="http://www.craigslist.com" target="_blank"> Craigslist </a></p>
+
+							<h3> Contact </h3>
+								<p> (617) 997-5513 </p>
+								<p> <a href="mailto:Devon@TrioRE.com"> Devon@TrioRE.com </a></p>
+								<p> 71 Arlington Street </p>
+								<p> Watertown, MA 02472 </p>
 	</footer>
-
-
-</div> 
-</div> <!--end of Content -->
 
 </body>
 </html>
