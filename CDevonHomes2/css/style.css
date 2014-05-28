@@ -14,7 +14,6 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 			width: 150px; 
 			margin: 10px 0px 0px 25px;
 			z-index: 10;
-			/*@mediaquery to center after small break point, change the size of the icon*/
 		}
 
 	#logo img {
@@ -25,8 +24,8 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	#banner {
 				height:200px;
 	 			width:100%; 
-	 			padding: 0;
-	 			margin: 0;
+	 			padding:0;
+	 			margin:0;
 	 			position: relative;
 	 			background-image: url("file:///Users/Emilycanina/Desktop/CDevonHomes/images/bostonskyline.png");
 				background-repeat:no-repeat;
@@ -196,11 +195,11 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
      	-webkit-flex-flow: row wrap;
      	flex-flow: row wrap;
 		height:auto; 
-		width: 100%; 
+		width: 97.5%; 
 		font-family: 'Open Sans', sans-serif; 
 		font-weight: 100;
 		float: left;
-		padding: 5px 5px 50px 25px;
+		padding: 5px 0px 50px 2.5%;
 		background-color: rgba(85,141,69, 0.8);
 		}	
 
@@ -270,7 +269,7 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	#maindiv{width: 90%; margin: 3px 5% 3px 5%;}
 	#newsfeed{width: 90%; margin: 3px 5% 3px 5%;}
 
-	footer {float: none; padding: 5px 5px 50px 30px;}
+	footer {float: none;}
 	footer a{color: white; font-weight: 400;}
 	footer p{color: black; font-weight: 500; font-size: 120%}
 	footer h3{font-size: 140%;}
