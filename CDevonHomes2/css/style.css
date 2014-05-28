@@ -188,23 +188,35 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 
 	
 /* footer */
+    .c1, .c2, .c3 { width: 30%;}
 
 	footer {
+		display: -webkit-flex;
+     	display: flex;
+     	-webkit-flex-flow: row wrap;
+     	flex-flow: row wrap;
 		height:auto; 
 		width: 100%; 
-		font-family: 'Open Sans', sans-serif; font-weight: 400;
-		font-size: 14px;
+		font-family: 'Open Sans', sans-serif; 
+		font-weight: 100;
 		float: left;
 		padding: 5px 5px 50px 25px;
 		background-color: rgba(85,141,69, 0.8);
+		}	
+
+	footer p{
+				font-size: 100%;
+				line-height: 0.7em;
 			}
+		
 	footer ul{margin: 0px; padding: none;}
-	footer li{display: inline-block; margin-left: 0; margin-right: 0;}
+	footer li{display: inline-block; margin: 0; }
+	footer h3{line-height: 0.7em; margin-top: 40px;}
 
 
 /* MEDIA QUERY ----------------------*/
 
-	@media screen and (max-width:600px){
+	@media screen and (max-width:650px){
 		h1{ font-size: 200%; text-align: center;}
 
 	#banner {
@@ -249,15 +261,37 @@ body {margin:0; padding:0; width: 100%; height: 100%; background-color: white; f
 	#sidebar{ 
 		float:none;
 		clear: both; 
-		width: 100%; 
-		margin: 10px 0px 0px 0px;
+		width: 80%; 
+		margin: 0%;
 		padding: 10px 10% 10px 10%;
 	}
-	#maindiv{width: 90%; margin: 3px 3% 3px 3%;}
-	#newsfeed{width: 90%; margin: 3px 3% 3px 3%;}
+	#sidebar a {display: none; }
+
+	#maindiv{width: 90%; margin: 3px 5% 3px 5%;}
+	#newsfeed{width: 90%; margin: 3px 5% 3px 5%;}
+
+	footer {float: none; padding: 5px 5px 50px 30px;}
 	footer a{color: white; font-weight: 400;}
-	footer p{color: black; font-weight: 500;}
+	footer p{color: black; font-weight: 500; font-size: 120%}
+	footer h3{font-size: 140%;}
 	
+	   .c1 {
+        width: 100%;
+        -webkit-order: 2;
+        order: 2;
+      }
+
+      .c2 {
+        width: 100%;
+        -webkit-order: 1;
+        order: 1;
+      }
+
+      .c3 {
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+      }
 	.trio { float: none; width: 180px; height: 180px; margin-left: auto; margin-right: auto;}	
 	.trioText {
 				font-family: 'Open Sans', sans-serif;
