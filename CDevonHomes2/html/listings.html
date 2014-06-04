@@ -5,8 +5,6 @@
 <meta name ="viewport" content="width=device-width, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 
-<script type="text/javascript"></script>
-<script type="text/javascript"></script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
 
@@ -14,7 +12,7 @@
 jQuery(document).ready(function($){
 
 	/* prepend menu icon */
-	$('#mainnav').prepend('<div id="menu-icon">Menu</div>');
+	$('#nav-wrap').prepend('<div id="menu-icon"></div>');
 	
 	/* toggle nav */
 	$("#menu-icon").on("click", function(){
@@ -28,25 +26,25 @@ jQuery(document).ready(function($){
 </head>
 
 <body>
-	
-<div id="logo">
-	<div>
-		<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/cdhlogo.png">
-	</div>
-</div>
+	<header>
+			<div id="logo">
+				<div>
+					<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/cdhlogo.png">
+				</div>
+			</div>
 
-<div id="banner"> 
-</div>
+		<div id="banner"> </div>
 
-	<div id="mainnav">
-		<ul id="nav">
-			<li><a href="index.html"> Home </a></li>
-			<li><a href="about.html"> About </a></li>
-			<li><a href="listings.html"> Exclusive Listings </a></li>
-			<li><a href="trilogy.html"> Team Trilogy </a></li>
-			<li><a href="testimonials.html"> Client Testimonials </a></li>
-		</ul>
-	</div> 
+		<nav id="nav-wrap">
+			<ul id="nav">
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="about.html"> About </a></li>
+				<li><a href="listings.html"> Exclusive Listings </a></li>
+				<li><a href="trilogy.html"> Team Trilogy </a></li>
+				<li><a href="testimonials.html"> Client Testimonials </a></li>
+			</ul>
+		</nav> 
+	</header>
 
 <h2 class="titleindent"> Exclusive Listings</h2>
 <div id="maindiv"> 

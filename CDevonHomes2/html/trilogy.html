@@ -12,7 +12,7 @@
 jQuery(document).ready(function($){
 
 	/* prepend menu icon */
-	$('#mainnav').prepend('<div id="menu-icon">Menu</div>');
+	$('#nav-wrap').prepend('<div id="menu-icon"></div>');
 	
 	/* toggle nav */
 	$("#menu-icon").on("click", function(){
@@ -23,29 +23,29 @@ jQuery(document).ready(function($){
 });
 
 </script>
-
 </head>
 
 <body>
+	<header>
 	
-<div id="logo">
-	<div>
-		<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/cdhlogo.png">
-	</div>
-</div>
+			<div id="logo">
+				<div>
+					<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/cdhlogo.png">
+				</div>
+			</div>
 
-		<div id="banner"> 
-		</div>
+		<div id="banner"> </div>
+		<nav id="nav-wrap">
+			<ul id="nav">
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="about.html"> About </a></li>
+				<li><a href="listings.html"> Exclusive Listings </a></li>
+				<li><a href="trilogy.html"> Team Trilogy </a></li>
+				<li><a href="testimonials.html"> Client Testimonials </a></li>
+			</ul>
+		</nav> 
 
-			<div id="mainnav">
-				<ul id="nav">
-					<li><a href="index.html"> Home </a></li>
-					<li><a href="about.html"> About </a></li>
-					<li><a href="listings.html"> Exclusive Listings </a></li>
-					<li><a href="trilogy.html"> Team Trilogy </a></li>
-					<li><a href="testimonials.html"> Client Testimonials </a></li>
-				</ul>
-			</div> 
+	</header>
 
 <h2 class="titleindent"> Team Trilogy at Trio </h2>
 <div id="maindiv"> 
