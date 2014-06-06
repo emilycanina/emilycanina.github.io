@@ -98,19 +98,14 @@ body {margin:0; background-color: white; font-size: 16px;}
 	#sidebar a {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; }
 
 		/* newfeed */
-						#newsfeed {
-									height:auto; 
-									width:60%; 
-									margin-left:2.5%;
-									float:left;				
-									border: 1px solid black;
-								}
-						#facebookFeeds{ 
-								}
+			#newsfeed {
+				height:auto; 
+				width:60%; 
+				margin-left:2.5%;
+				float:left;				
+				border: 1px solid black;
+					}
 
-						#craigslistFeeds{
-
-								}
 
 					/*(230,233,222) */
 					/* credit for the social media icons goes to © 2013 Creative Nerds, Inc. All rights reserved */
@@ -184,6 +179,8 @@ body {margin:0; background-color: white; font-size: 16px;}
 	line-height: 1.4em;
 }
 
+/* Client Testimonial Page */
+textarea { width: 90%; height: 90%;}
 
 
 /* footer */
@@ -217,6 +214,8 @@ body {margin:0; background-color: white; font-size: 16px;}
 
 	@media screen and (max-width:670px){
 		h1{ font-size: 200%; text-align: center;}
+		.titleindent {text-indent: 0px;}
+		h2{text-align: center;}
 
 	#banner {
 		background-image: none;
