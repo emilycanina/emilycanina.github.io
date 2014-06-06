@@ -81,7 +81,6 @@ body {margin:0; background-color: white; font-size: 16px;}
 	.titleindent {text-indent: 70px;}
 	.homeindent {text-indent: 2.5%;}
 	.subtitle {font-family: 'Open Sans', sans-serif; font-size: 16px; color: rgb(85,141,69); font-weight: bold;}
-	.border {border-style:double; border-color:blue;}
 
 /* home page */
 
@@ -104,8 +103,7 @@ body {margin:0; background-color: white; font-size: 16px;}
 									width:60%; 
 									margin-left:2.5%;
 									float:left;				
-									border:solid;
-									border-color:black;
+									border: 1px solid black;
 								}
 						#facebookFeeds{ 
 								}
@@ -164,18 +162,30 @@ body {margin:0; background-color: white; font-size: 16px;}
 					float: left;
 				   }
 
-/* inside pages -- sidediv */
-			
-			/*#sidediv {
-						padding: 11px 20px 50px 20px;
-						margin-left: 50px; 
-						float: left;
-					}
+#respond {
+	margin-top: 40px;
+}
 
-			#sidediv ul {margin: 0px; padding: none;}
-			#sidediv li {margin-bottom:30px;} */
+#respond input[type='text'],
+#respond input[type='email'], 
+#respond textarea {
+	margin-bottom: 10px;
+	display: block;
+	width: 100%;
 
-	
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+
+	line-height: 1.4em;
+}
+
+
+
 /* footer */
     .c1, .c2, .c3 { width: 30%;}
 

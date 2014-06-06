@@ -11,34 +11,7 @@
 	<meta name ="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/font.css" charset="utf-8"/>
-<!--
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
-	<script type="text/javascript">
-			var contentFeedsContainers = {};
-
-			
-
-			$( document ).ready(function() {
-				$('#toogleFeeds a').bind('click', toogleFeeds);
-				alert("Test");
-				contentFeedsContainers = $('.feeds');
-			});
-			
-			function toogleFeeds(e){
-				alert("Test2");
-				//console.log("Twe");
-				/*var thisObj = $(this);
-				var targetContent = $('#' + thisObj.attr('targetContent'));
-
-				console.log(thisObj.attr('targetContent'));
-
-				contentFeedsContainers.hide();
-
-				targetContent.show();*/
-			}
-		</script>
-		-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function($){
@@ -58,6 +31,7 @@ jQuery(document).ready(function($){
 </head>
 
 <body>
+
 <header>
 	<nav id="nav-wrap">
 		<ul id="nav">
@@ -79,36 +53,13 @@ jQuery(document).ready(function($){
 </header>
 
 
-
 <h1 class="homeindent"> C. Devon Homes Boston Area </h1>
 
 <h2 class="homeindent"> News Feed </h2>
 	
 	<div id="newsfeed"> 
 
-		<div id="toogleFeeds">
-			<a href="javascript:;" targetContent="facebookFeeds">Facebook</a>
-			<a href="javascript:;" targetContent="craigslistFeeds">Craigslist</a>
-		</div>
-
-				<div id="facebookFeeds" class="feeds">
-					<iframe src=""></iframe>
-					<!-- https://www.facebook.com/CDevonHolden -->
-				</div>
-
-						<div id="craigslistFeeds" class="feeds">
-							<iframe src=""></iframe>
-						</div>
-
-		<script type="text/javascript">
-				$(function(){
-					$('.nav').bind('click', toogleFeeds);
-				});
-
-				function toogleFeeds(){
-					/* Write the code taht reads the id value of the content div you want to show, then turn off other divs using $('#craigslist').hide(), then target the div you want and show it using $('#facebook').show()*/
-				}
-		</script>
+	<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FCDevonHolden&width&height=427px&colorscheme=light&show_faces=false&header=true&stream=true&show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:427px;" allowTransparency="true"></iframe>
 	</div>
 
 	<div id="sidebar"> 
