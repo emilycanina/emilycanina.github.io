@@ -39,33 +39,94 @@ jQuery(document).ready(function($){
 
 		<div id="logo">
 			<div>
-				<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/cdhlogo.png">
+				<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/Logo_V2.0.png">
 			</div>
 		</div>
 
 		<div id="banner"> </div>
 </header>
 
+    $(function() {
+    $('#carousel span').append('<img src="img/gui/carousel_glare.png" class="glare" />');
+    $('#thumbs a').append('<img src="img/gui/carousel_glare_small.png" class="glare" />');
+     
+    $('#carousel').carouFredSel({
+    responsive: true,
+    circular: false,
+    auto: false,
+    items: {
+    visible: 1,
+    width: 200,
+    height: '56%'
+    },
+    scroll: {
+    fx: 'directscroll'
+    }
+    });
+     
+    $('#thumbs').carouFredSel({
+    responsive: true,
+    circular: false,
+    infinite: false,
+    auto: false,
+    prev: '#prev',
+    next: '#next',
+    items: {
+    visible: {
+    min: 2,
+    max: 6
+    },
+    width: 150,
+    height: '66%'
+    }
+    });
+     
+    $('#thumbs a').click(function() {
+    $('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+    $('#thumbs a').removeClass('selected');
+    $(this).addClass('selected');
+    return false;
+    });
+     
+    });
+    
+<!--http://coolcarousels.frebsite.nl/c/28/ -->
 <h2 class="titleindent"> Exclusive Listings</h2>
 <div id="maindiv"> 
-<!-- Place somewhere in the <body> of your page -->
-<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="slide1.jpg" />
-    </li>
-    <li>
-      <img src="slide2.jpg" />
-    </li>
-    <li>
-      <img src="slide3.jpg" />
-    </li>
-    <li>
-      <img src="slide4.jpg" />
-    </li>
-    <!-- items mirrored twice, total of 12 -->
-  </ul>
-</div>
+    <div id="wrapper">
+    <div id="carousel-wrapper">
+    <img id="shadow" src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_shadow.png" />
+	    <div id="carousel">
+		    <span id="pixar"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/pixar.jpg" /></span>
+		    <span id="bugs"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/bugs.jpg" /></span>
+		    <span id="cars"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/cars.jpg" /></span>
+		    <span id="incred"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/incred.jpg" /></span>
+		    <span id="monsters"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/monsters.jpg" /></span>
+		    <span id="nemo"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/nemo.jpg" /></span>
+		    <span id="rat"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/rat.jpg" /></span>
+		    <span id="toystory"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/toystory.jpg" /></span>
+		    <span id="up"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/up.jpg" /></span>
+		    <span id="walle"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/large/walle.jpg" /></span>
+	    </div>
+    </div>
+    <div id="thumbs-wrapper">
+	    <div id="thumbs">
+		    <a href="#pixar" class="selected"><img src="img/small/pixar.jpg" /></a>
+		    <a href="#bugs"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/bugs.jpg" /></a>
+		    <a href="#cars"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/cars.jpg" /></a>
+		    <a href="#incred"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/incred.jpg" /></a>
+		    <a href="#monsters"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/monsters.jpg" /></a>
+		    <a href="#nemo"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/nemo.jpg" /></a>
+		    <a href="#rat"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/rat.jpg" /></a>
+		    <a href="#toystory"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/toystory.jpg" /></a>
+		    <a href="#up"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/up.jpg" /></a>
+		    <a href="#walle"><img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/small/walle.jpg" /></a>
+	    </div>
+	    <a id="prev" href="#"></a>
+	    <a id="next" href="#"></a>
+    </div>
+    </div>
+
 </div> <!-- end of maindiv -->
 
 	<footer>
