@@ -37,9 +37,6 @@ jQuery(document).ready(function($){
 
 		<script type="text/javascript">
 			$(function() {
-				
-				$('#carousel span').append('<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_glare.png" class="glare" />');
-				$('#thumbs a').append('<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_glare_small.png" class="glare" />');
 
 				$('#carousel').carouFredSel({
 					responsive: true,
@@ -80,148 +77,7 @@ jQuery(document).ready(function($){
 				});
 
 			});
-		</script>
-		<style type="text/css">
-			html, body {
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-			body {
-				background: url(file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/bg_glare.png) top center no-repeat #bcc;
-			}
-			html > body {
-				min-height: 600px;
-			}
-			body * {
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				color: #333;
-				line-height: 22px;
-			}
-
-			#wrapper {
-				position: absolute;
-				width: 50%;
-				left: 2.5%;
-				top: 50px;
-			}
-			#carousel-wrapper {
-				padding-bottom: 10px;
-				position: relative;
-			}
-			#carousel, #thumbs {
-				overflow: hidden;
-			}
-			#carousel-wrapper .caroufredsel_wrapper {
-				border-radius: 10px;
-				box-shadow: 0 0 5px #899;
-			}
-
-			#carousel span, #carousel img,
-			#thumbs a, #thumbs img  {
-				display: block;
-				float: left;
-			}
-			#carousel span, #carousel a,
-			#thumbs span, #thumbs a {
-				position: relative;
-			}
-			#carousel img,
-			#thumbs img {
-				border: none;
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-			#carousel img.glare,
-			#thumbs img.glare {
-				width: 102%;
-				height: auto;
-			}
-
-			#carousel span {
-				width: 554px;
-				height: 313px;
-			}
-
-			#thumbs-wrapper {
-				padding: 20px 40px;
-				position: relative;
-			}
-			#thumbs a {
-				border: 2px solid #899;
-				width: 150px;
-				height: 100px;
-				margin: 0 10px;
-				overflow: hidden;
-				border-radius: 10px;
-				
-				-webkit-transition: border-color .5s;
-				-moz-transition: border-color .5s;
-				-ms-transition: border-color .5s;
-				transition: border-color .5s;
-			}
-			#thumbs a:hover, #thumbs a.selected {
-				border-color: #566;
-			}
-			
-			#wrapper img#shadow {
-				width: 100%;
-				position: absolute;
-				bottom: 0;
-			}
-
-			#prev, #next {
-				background: transparent url('file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_nav.png') no-repeat 0 0;
-				display: block;
-				width: 19px;
-				height: 20px;
-				margin-top: -10px;
-				position: absolute;
-				top: 50%;
-			}
-			#prev {
-				background-position: 0 0;
-				left: 10px;
-			}
-			#next {
-				background-position: -19px 0;
-				right: 10px;
-			}			
-			#prev:hover { 
-				background-position: 0 -20px;				
-			}
-			#next:hover {
-				background-position: -19px -20px;				
-			}
-			#prev.disabled, #next.disabled {
-				display: none !important;
-			}
-			
-			#donate-spacer {
-				height: 100%;
-			}
-			#donate {
-				border-top: 1px solid #999;
-				width: 750px;
-				padding: 50px 75px;
-				margin: 0 auto;
-				overflow: hidden;
-			}
-			#donate p, #donate form {
-				margin: 0;
-				float: left;
-			}
-			#donate p {
-				width: 650px;
-			}
-			#donate form {
-				width: 100px;
-			}
-		</style>
+	</script>
 </head>
 
 <body>
@@ -248,9 +104,12 @@ jQuery(document).ready(function($){
 
    
 <!--http://coolcarousels.frebsite.nl/c/28/ -->
-<h2 class="titleindent"> Exclusive Listings</h2>
-<div id="maindiv"> 
-    <div id="wrapper">
+<h2 class="homeindent"> Exclusive Listings</h2>
+<div id="main-listings"> 
+
+<div class="b1" id="carousel-header"> <h2>For Rent</h2> </div>
+
+    <div class="b2" id="wrapper">
 	    <div id="carousel-wrapper">
 		    <img id="shadow" src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_shadow.png" />
 			<div id="carousel">
@@ -284,7 +143,13 @@ jQuery(document).ready(function($){
     	</div>
     </div>
 
-</div> <!-- end of maindiv -->
+	    <div class="b3" id="carousel-text">
+		    <h2>Address</h2>
+		    <h3>$100,000, X Bedrooms, X Bath, (Not)Pet friendly</h3>
+		   	<p>This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing.</p>
+	    </div>
+
+</div> <!-- end of main-listings -->
 
 	<footer>
 		<div class="c1">

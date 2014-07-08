@@ -100,8 +100,8 @@ body {margin:0; background-color: white; font-size: 16px;}
 	#sidebar p {line-height: 1.1em; font-size:95%; color: black;}
 	#sidebar a {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; }
 
-		/* newfeed */
-			#newsfeed {
+		/* news-feed */
+			#news-feed {
 				height:auto; 
 				width:60%; 
 				margin-left:2.5%;
@@ -114,7 +114,7 @@ body {margin:0; background-color: white; font-size: 16px;}
 					/* credit for the social media icons goes to © 2013 Creative Nerds, Inc. All rights reserved */
 
 /* inside pages */
-	#maindiv {
+	#main-div {
 				height: auto; 
 				width: 600px; 
 				position:relative;
@@ -123,106 +123,168 @@ body {margin:0; background-color: white; font-size: 16px;}
 				float: left;
 			}
 
+	#main-listings {
+			display: -webkit-flex;
+     		display: flex;
+     		-webkit-flex-flow: row wrap;
+     		flex-flow: row wrap;
+			height: auto; 
+			width: 95%; 
+			position:relative;
+			margin: 0px 2.5% 2.5% 2.5%;
+			padding: 2.5% 0px 2.5 0px;
+			float: left;
+			}
+
 /* about page */
-	#aboutPic {margin-left:20px; float:left;}
+	#about-pic {margin-left:20px; float:left;}
 		
-	#aboutInfo  {width:365px; height:140px; float:left;}
-	#aboutInfo ul {margin: 0px;}
-	#aboutInfo li {margin-bottom: 5px; font-family: 'Open Sans', sans-serif; font-size:14px;}
-	#aboutContent {
+	#about-info  {width:365px; height:140px; float:left;}
+	#about-info ul {margin: 0px;}
+	#about-info li {margin-bottom: 5px; font-family: 'Open Sans', sans-serif; font-size:14px;}
+	#about-content {
 					padding:0px 10px 0px 10px; 
 					margin:0px 10px 0px 10px;
 					float:left;
 				}
 
 /* exclusive listings page */
-		html, body {height: 100%; padding: 0; margin: 0;}
-		body { background: url(file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/gui/bg_glare.png) top center no-repeat #bcc;}
-		html > body { min-height: 600px;}
-		body * {
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				color: #333;
-				line-height: 22px;
-				}
-		 
-		#wrapper { position: absolute; width: 50%; left: 25%; top: 50px;}
-		#carousel-wrapper { padding-bottom: 10px; position: relative;}
-		#carousel, #thumbs { overflow: hidden;}
-		#carousel-wrapper .caroufredsel_wrapper {border-radius: 10px; box-shadow: 0 0 5px #899;}
-		 
-		#carousel span, #carousel img,
-		#thumbs a, #thumbs img { display: block; float: left;}
-		#carousel span, #carousel a,
-		#thumbs span, #thumbs a { position: relative;}
+
+			#wrapper {
+				position: relative;
+				width: 55%;
+				left: 0;
+				top: 0px;
+			}
+
+			#carousel-text{
+				width: 40%;
+				padding: 2.5% 2.5%;
+			}
+
+			#carousel-text h2{font-family:'Merriweather', serif;  font-size: 115%; color: black;}
+			#carousel-text h3{font-family:'Open Sans', serif;  font-size: 100%; line-height: 1.3em;}
+			#carousel-text p{font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 90%; color: black;}
+
+			#carousel-header{
+				width: 55%;
+			}
+			#carousel-header h2{ font-family:'Open Sans', serif;  font-size: 100%; color: green; line-height: 5.5px;}
+
+			.b1 {width: 55%}
+		    .b2 {width: 55%;}
+		    .b3 {width: 45%}
+
+			#carousel-wrapper {
+				padding-bottom: 10px;
+				position: relative;
+			}
+			#carousel, #thumbs {
+				overflow: hidden;
+			}
+			
+			#carousel-wrapper .caroufredsel_wrapper {
+				border-radius: 0px;
+				box-shadow: none;
+			}
+			
+
+			#carousel span, #carousel img,
+			#thumbs a, #thumbs img  {
+				display: block;
+				float: left;
+			}
+			#carousel span, #carousel a,
+			#thumbs span, #thumbs a {
+				position: relative;
+			}
 			#carousel img,
 			#thumbs img {
-					border: none;
-					width: 100%;
-					height: 100%;
-					position: absolute;
-					top: 0;
-					left: 0;
+				border: none;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				top: 0;
+				left: 0;
 			}
-			#carousel img.glare,
-			#thumbs img.glare { width: 102%; height: auto;}
- 
-			#carousel span { width: 554px; height: 313px;}
- 
-			#thumbs-wrapper { padding: 20px 40px; position: relative;}
+
+			#carousel span {
+				width: 654px;
+				height: 313px;
+			}
+
+			#thumbs-wrapper {
+				padding: 20px 40px;
+				position: relative;
+			}
 			#thumbs a {
-					border: 2px solid #899;
-					width: 150px;
-					height: 100px;
-					margin: 0 10px;
-					overflow: hidden;
-					border-radius: 10px;
-					-webkit-transition: border-color .5s;
-					-moz-transition: border-color .5s;
-					-ms-transition: border-color .5s;
-					transition: border-color .5s;
-					}
-			#thumbs a:hover, #thumbs a.selected { border-color: #566;}
-			 
+				border: none;
+				width: 150px;
+				height: 100px;
+				margin: 0 10px;
+				overflow: hidden;
+				border-radius: 0px; 
+				
+				-webkit-transition: border-color .5s;
+				-moz-transition: border-color .5s;
+				-ms-transition: border-color .5s;
+				transition: border-color .5s;
+			}
+			#thumbs a:hover, #thumbs a.selected {
+				border-color: #566;
+			}
+			
 			#wrapper img#shadow {
-					width: 100%;
-					position: absolute;
-					bottom: 0;
-						}
-				 
+				width: 0%;
+				position: absolute;
+				bottom: 0;
+			}
+
 			#prev, #next {
-					background: transparent url('file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/gui/carousel_nav.png') no-repeat 0 0;
-					display: block;
-					width: 19px;
-					height: 20px;
-					margin-top: -10px;
-					position: absolute;
-					top: 50%;
-					}
-			#prev { background-position: 0 0; left: 10px;}
-			#next {background-position: -19px 0; right: 10px;}	
-			#prev:hover {background-position: 0 -20px;}
-			#next:hover {background-position: -19px -20px;	}
-			#prev.disabled, #next.disabled {display: none !important;}
+				background: transparent url('file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_nav.png') no-repeat 0 0;
+				display: block;
+				width: 19px;
+				height: 20px;
+				margin-top: -10px;
+				position: absolute;
+				top: 50%;
+			}
+			#prev {
+				background-position: 0 0;
+				left: 10px;
+			}
+			#next {
+				background-position: -19px 0;
+				right: 10px;
+			}			
+			#prev:hover { 
+				background-position: 0 -20px;				
+			}
+			#next:hover {
+				background-position: -19px -20px;				
+			}
+			#prev.disabled, #next.disabled {
+				display: none !important;
+			}
 
 /* team triology page */
 	.trio { float: left; width: 180px; height: 180px; }	
-	.trioText {font-family: 'Open Sans', sans-serif; font-size: 14px; text-align: center; line-height: 5.5px;}
-	.trioImg {display: block; margin-left: auto; margin-right: auto; max-width: 60%; max-height: 80%}
+	.trio-text {font-family: 'Open Sans', sans-serif; font-size: 14px; text-align: center; line-height: 5.5px;}
+	.trio-img {display: block; margin-left: auto; margin-right: auto; max-width: 60%; max-height: 80%}
 
-	#trioJosh  { width: 180px; height: 180px;}
-	#trioJosh p {}
-	#trioJosh h3 {color: green; margin-top: }
+	#trio-josh  { width: 180px; height: 180px;}
+	#trio-josh p {}
+	#trio-josh h3 {color: green; margin-top: }
 
-	#trioDevon  {width: 180px; height: 180px; }		
-	#trioDevon p {}	
-	#trioDevon h3 {color: green;}	
+	#trio-devon  {width: 180px; height: 180px; }		
+	#trio-devon p {}	
+	#trio-devon h3 {color: green;}	
 
-	#trioGreg  { width: 180px; height: 180px; }
-	#trioGreg p {}
-	#trioGreg h3 {color: green;}
+	#trio-greg  { width: 180px; height: 180px; }
+	#trio-greg p {}
+	#trio-greg h3 {color: green;}
 
-	#trioContent {
+	#trio-content {
 					padding:0px 10px 0px 10px; 
 					margin: 0px 10px 0px 10px;
 					float: left;
@@ -294,9 +356,11 @@ textarea { width: 90%; height: 90%;}
 		height: 150px;
 			}
 	#logo{
-		width: 30%;
-		margin-right:35%;
-		margin-left: 35%;
+		width: 150px;
+		margin-right:50%;
+		margin-left: 33%;
+		border-radius:0; 
+		background: none;
 	}
 
 
@@ -365,8 +429,8 @@ textarea { width: 90%; height: 90%;}
 	}
 	#sidebar a {display: none; }
 
-	#maindiv{width: 90%; margin: 3px 5% 3px 5%;}
-	#newsfeed{width: 90%; margin: 3px 5% 3px 5%;}
+	#main-div{width: 90%; margin: 3px 5% 3px 5%;}
+	#news-feed{width: 90%; margin: 3px 5% 3px 5%;}
 
 	footer {float: none;}
 	footer a{color: white; font-weight: 400;}
@@ -390,20 +454,42 @@ textarea { width: 90%; height: 90%;}
         -webkit-order: 3;
         order: 3;
       }
+
 	.trio { float: none; width: 180px; height: 180px; margin-left: auto; margin-right: auto;}	
-	.trioText {
+	.trio-text {
 				font-family: 'Open Sans', sans-serif;
 			 	font-size: 14px; 
 			 	margin-top: 15px;
 			 }
-.hide{display: none;}
+	.hide{display: none;}
 
-	}
+	   .b1 {
+        width: 100%;
+        -webkit-order: 1;
+        order: 1;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
+      .b2 {
+        width: 100%;
+        -webkit-order: 2;
+        order: 2;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
+      .b3 {
+      	width: 100%;
+        -webkit-order: 3;
+        order: 3;
+        margin-right: auto;
+        margin-left: auto;
 
+      }
 
-
+		#wrapper, #carousel-text, #carousel-header{ width: 80%; }
+}
 
 
 
