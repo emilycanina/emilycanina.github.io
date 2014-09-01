@@ -81,31 +81,43 @@ jQuery(document).ready(function($){
 </head>
 
 <body>
-<header>
-	<nav id="nav-wrap">
-		<ul id="nav">
-			<li><a href="index.html"> Home </a></li>
-			<li><a href="about.html"> About </a></li>
-			<li><a href="listings.html"> Exclusive Listings </a></li>
-			<li><a href="trilogy.html"> Team Trilogy </a></li>
-			<li><a href="testimonials.html"> Client Testimonials </a></li>
-		</ul>
-	</nav> 
+	<header class="section group">
+		<div class="col span_4_of_12"> </div>
+		<div class="col span_5_of_12"> 
+			<h1> <b>C. Devon Homes</b> - Boston Area </h1>
+		</div>
+		
+		<div class="col span_2_of_12"> 
+			<h3> Contact Devon </h3>
+			<p> (617) 997-5513 </p>
+			<p> <a href="mailto:CDevonhomes@gmail.com"> CDevonhomes@gmail.com </a></p>
+		</div>
+	</header>
 
+<div id="main-wrapper">
 		<div id="logo">
-			<div>
+			<div id="background">
 				<img src="file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/Logo_V2.0.png">
 			</div>
 		</div>
-
 		<div id="banner"> </div>
-</header>
+
+	<nav id="nav-wrap" class= "section group">
+		
+		<ul id="nav" class="col span_10_of_12">
+		<div class="col span_4_of_12"></div>
+			<li ><a href="index.html"> Home </a></li>
+			<li ><a href="about.html"> About </a></li>
+			<li ><a href="listings.html"> Exclusive Listings </a></li>
+			<li ><a href="testimonials.html"> Client Testimonials </a></li>
+		</ul>
+		
+	</nav> 
 
 
    
 <!--http://coolcarousels.frebsite.nl/c/28/ -->
 <h2 class="homeindent"> Exclusive Listings</h2>
-<div id="main-listings"> 
 
 <div class="b1" id="carousel-header"> <h2>For Rent</h2> </div>
 
@@ -149,10 +161,12 @@ jQuery(document).ready(function($){
 		   	<p>This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing. This is filler text for the description of the listing.</p>
 	    </div>
 
-</div> <!-- end of main-listings -->
 
-	<footer>
-		<div class="c1">
+<div id="footercontainer">
+
+	<footer class="group">
+		<div class="col span_3_of_12"> </div>
+		<div class="col span_2_of_12">
 			<h3> Connect </h3>
 			<li><a href="http://www.facebook.com" target="_blank"> <img src= "file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/facebook2.png" alt="facebook.com"></li>
 
@@ -162,22 +176,24 @@ jQuery(document).ready(function($){
 			</li>
 		</div>
 
-				<div class="c2">
-					<h3> Find My Listings </h3>
+			<div class="col span_2_of_12">
+				<h3> Find My Listings </h3>
 					<p><a href="http://www.truila.com" target="_blank"> Trulia </a></p>
 					<p><a href="http://www.zillow.com" target="_blank"> Zillow </a></p>
 					<p><a href="http://www.yougotlistings.com" target="_blank"> You Got Listings </a></p>
 					<p><a href="http://www.craigslist.com" target="_blank"> Craigslist </a></p>
-				</div>
+			</div>
 
-		<div class="c3">
-			<h3> Contact </h3>
-			<p> (617) 997-5513 </p>
-			<p> <a href="mailto:Devon@TrioRE.com"> Devon@TrioRE.com </a></p>
-			<p> 71 Arlington Street </p>
-			<p> Watertown, MA 02472 </p>
-		</div>					
+			<div class="col span_2_of_12">
+				<h3> Contact </h3>
+				<p> (617) 997-5513 </p>
+				<p> <a href="mailto:CDevonhomes@gmail.com"> CDevonhomes@gmail.com </a></p>
+				<p> 71 Arlington Street </p>
+				<p> Watertown, MA 02472 </p>
+			</div>
+			<div class="col span_3_of_12"> </div>
 	</footer>
+</div>
 
 <script>
 $(window).load(function() {
@@ -190,5 +206,6 @@ $(window).load(function() {
 });
 </script>
 
+</div>
 </body>
 </html>

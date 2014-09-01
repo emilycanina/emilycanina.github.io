@@ -2,11 +2,20 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
-body {margin:0; background-color: white; font-size: 16px;}
+body {
+		margin:0; 
+		background-image: url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/background.jpg"); 
+		font-size: 16px;
+		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: bottom;
+	}
 	a {text-decoration:none; font-family: 'Open Sans', sans-serif; }
 	ul {list-style-type:none;}
 	li {list-style-type:none;}
 	p {font-family: 'Open Sans', sans-serif; font-size:16px; }
+
+#main-wrapper{ background-color: white; width: 83.06%; margin: 0px auto 0 auto; padding-bottom: 280px;}
 
 	#logo {
 			position: absolute;
@@ -39,9 +48,8 @@ body {margin:0; background-color: white; font-size: 16px;}
 /* nav */
 #nav {
 	position: absolute;
-	width:100%;
 	height: 40px;
-	top:164px;
+	top:331px;
 	padding-top: 2px;
 	background-color:rgba(255, 255, 255, 0.85);
 	z-index: 10000;
@@ -49,7 +57,7 @@ body {margin:0; background-color: white; font-size: 16px;}
 
 	#nav, #nav li {margin: 0; padding:0;}
 	#nav li{ float:left; list-style: none outside none; margin-right: 0px;}
-	#nav li:first-child {margin-left:2.5%;}
+	#nav li:first-child {margin-left:0;}
 	
 	#nav a {
 			background: none repeat scroll 0 0 rgba(225,225,225, 0); 
@@ -73,42 +81,38 @@ body {margin:0; background-color: white; font-size: 16px;}
 
 /* paragraph and heading styles */
 
-	h1 {font-family: 'Merriweather', serif; font-size: 250%; color: black;}
-	h2 {font-family:'Merriweather', serif;  font-size: 150%; color: black;}
-	h3 {font-family:'Merriweather', serif;  font-size: 115%; color: black;}
-	p {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; color: black; }
+	h1 {font-family:'Open Sans', sans-serif;font-size: 250%; color: white;}
+	h2 {font-family:'Open Sans', sans-serif;font-size: 150%; color: black;}
+	h3 {font-family:'Open Sans', sans-serif; font-size: 115%; color: black; line-height: 1.1em;}
+	p {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; color: black;}
 
 /* classes */
 	.center {text-align: center; margin-left: -10px;}
-	.centerimg {display: block; margin-left: auto; margin-right: auto;}
+	.homeimg {display: block; margin-left: auto; margin-right: auto;margin-top: 50px;}
 	.titleindent {text-indent: 70px;}
-	.homeindent {text-indent: 2.5%;}
 	.subtitle {font-family: 'Open Sans', sans-serif; font-size: 16px; color: rgb(85,141,69); font-weight: bold;}
 
 /* home page */
 
 	#sidebar {
 				height:auto; 
-				width:25%; 
 				padding:1% 3% 1% 3%;
 				margin: 0px 1% 0px 2.5%;
-				background-color:#ffddc0;
 				float:left;
 			}
 	#sidebar li {display: inline-block; margin-left: 0px;}
 	#sidebar ul {margin-left: 0px; padding: none;}
 	#sidebar p {line-height: 1.1em; font-size:95%; color: black;}
-	#sidebar a {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; }
+	#sidebar a {font-family: 'Open Sans', sans-serif; font-weight: 300; }
 
 		/* news-feed */
 			#news-feed {
 				height:auto; 
-				width:60%; 
-				margin-left:2.5%;
-				float:left;				
+				float:left;		
+				margin-top: 60px;	
+				margin-bottom: 60px;	
 				border: 1px solid black;
 					}
-
 
 					/*(230,233,222) */
 					/* credit for the social media icons goes to © 2013 Creative Nerds, Inc. All rights reserved */
@@ -267,29 +271,6 @@ body {margin:0; background-color: white; font-size: 16px;}
 				display: none !important;
 			}
 
-/* team triology page */
-	.trio { float: left; width: 180px; height: 180px; }	
-	.trio-text {font-family: 'Open Sans', sans-serif; font-size: 14px; text-align: center; line-height: 5.5px;}
-	.trio-img {display: block; margin-left: auto; margin-right: auto; max-width: 60%; max-height: 80%}
-
-	#trio-josh  { width: 180px; height: 180px;}
-	#trio-josh p {}
-	#trio-josh h3 {color: green; margin-top: }
-
-	#trio-devon  {width: 180px; height: 180px; }		
-	#trio-devon p {}	
-	#trio-devon h3 {color: green;}	
-
-	#trio-greg  { width: 180px; height: 180px; }
-	#trio-greg p {}
-	#trio-greg h3 {color: green;}
-
-	#trio-content {
-					padding:0px 10px 0px 10px; 
-					margin: 0px 10px 0px 10px;
-					float: left;
-				   }
-
 #respond {
 	margin-top: 40px;
 }
@@ -317,13 +298,8 @@ textarea { width: 90%; height: 90%;}
 
 
 /* footer */
-    .c1, .c2, .c3 { width: 30%;}
 
 	footer {
-		display: -webkit-flex;
-     	display: flex;
-     	-webkit-flex-flow: row wrap;
-     	flex-flow: row wrap;
 		height:auto; 
 		width: 97.5%; 
 		font-family: 'Open Sans', sans-serif; 
@@ -342,6 +318,73 @@ textarea { width: 90%; height: 90%;}
 	footer li{display: inline-block; margin: 0; }
 	footer h3{line-height: 0.7em; margin-top: 40px;}
 
+
+/* new code- columns*/
+.section {
+	padding: 0px;
+	margin: 0px;
+}
+
+.breaker { clear: both; }
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+	#footercontainer { width: 100%;}
+
+.span_12_of_12 { width: 100%;}
+.span_11_of_12 { width: 91.53%;}
+.span_10_of_12 { width: 83.06%;}
+.span_9_of_12 { width: 74.6%;}
+.span_8_of_12 { width: 66.13%;}
+.span_7_of_12 { width: 57.66%; }
+.span_6_of_12 { width: 49.2%; }
+.span_5_of_12 { width: 40.73%; }
+.span_4_of_12 { width: 32.26%; }
+.span_3_of_12 { width: 23.8%;}
+.span_2_of_12 { width: 15.33%; }
+.span_1_of_12 { width: 6.86%; }
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_12_of_12 { width: 100%; }
+	.span_11_of_12 { width: 100%; }
+	.span_10_of_12 { width: 100%; }
+	.span_9_of_12 { width: 100%; }
+	.span_8_of_12 { width: 100%; }
+	.span_7_of_12 { width: 100%; }
+	.span_6_of_12 { width: 100%; }
+	.span_5_of_12 { width: 100%; }
+	.span_4_of_12 { width: 100%; }
+	.span_3_of_12 { width: 100%; }
+	.span_2_of_12 { width: 100%; }
+	.span_1_of_12 { width: 100%; }
+}
 
 /* MEDIA QUERY ----------------------*/
 
@@ -419,7 +462,7 @@ textarea { width: 90%; height: 90%;}
 
 #nav ul li { margin: 3px 0 3px 15px; 	} 
 
-	/* side bar */
+	/* side bar*/
 	#sidebar{ 
 		float:none;
 		clear: both; 
@@ -435,62 +478,9 @@ textarea { width: 90%; height: 90%;}
 	footer {float: none;}
 	footer a{color: white; font-weight: 400;}
 	footer p{color: black; font-weight: 500; font-size: 120%}
-	footer h3{font-size: 140%;}
+	footer h3{font-size: 140%;} 
 	
-	   .c1 {
-        width: 100%;
-        -webkit-order: 2;
-        order: 2;
-      }
-
-      .c2 {
-        width: 100%;
-        -webkit-order: 1;
-        order: 1;
-      }
-
-      .c3 {
-        width: 100%;
-        -webkit-order: 3;
-        order: 3;
-      }
-
-	.trio { float: none; width: 180px; height: 180px; margin-left: auto; margin-right: auto;}	
-	.trio-text {
-				font-family: 'Open Sans', sans-serif;
-			 	font-size: 14px; 
-			 	margin-top: 15px;
-			 }
-	.hide{display: none;}
-
-	   .b1 {
-        width: 100%;
-        -webkit-order: 1;
-        order: 1;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      .b2 {
-        width: 100%;
-        -webkit-order: 2;
-        order: 2;
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      .b3 {
-      	width: 100%;
-        -webkit-order: 3;
-        order: 3;
-        margin-right: auto;
-        margin-left: auto;
-
-      }
 
 		#wrapper, #carousel-text, #carousel-header{ width: 80%; }
 }
-
-
-
 
