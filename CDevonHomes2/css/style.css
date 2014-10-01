@@ -1,59 +1,84 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700);
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 body {
 		margin:0; 
 		background-image: url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/background.jpg"); 
 		font-size: 16px;
+		font-family:'Open Sans', sans-serif;
 		background-repeat:no-repeat;
 		background-size: cover;
 		background-position: bottom;
 	}
-	a {text-decoration:none; font-family: 'Open Sans', sans-serif; }
+
+/* paragraph and heading styles */
+
+	a {text-decoration:none; font-family: 'Open Sans', sans-serif;}
+	a:hover {color:green;}
+	a:link {color:inherit;}
+	a:visited {color:green;text-decoration:none;}
+	a:active {color:black;text-decoration:none;}
+
 	ul {list-style-type:none;}
 	li {list-style-type:none;}
-	p {font-family: 'Open Sans', sans-serif; font-size:16px; }
 
-#main-wrapper{ background-color: white; width: 83.06%; margin: 0px auto 0 auto; padding-bottom: 280px;}
+	p {font-weight:300; font-size: 100%; color: black;}
+	h1 {font-size:200%; color:white; margin-top:80px;text-align: center; }
+	h2 {font-size:150%; color:black;}
+	h3 {font-size:115%; color:white; line-height:0.5em;} 
+
+
+#main-wrapper { 
+				background-color: white; 
+				width: 83.06%; 
+				margin: 0px auto 0 auto; 
+				padding-bottom: 280px;
+				font-family:'Open Sans', sans-serif;
+			}
 
 	#logo {
-			position: absolute;
-			height: 150px; 
-			width: 150px; 
-			margin: 7px 0px 0px 2.5%;
-			z-index: 10;
-			background: #ffffff no-repeat right top;
-			border-radius: 55%; 
+			position:absolute;
+			height:150px; 
+			width:150px; 
+			margin:7px 0px 0px 2.5%;
+			z-index:10;
+			background:#ffffff no-repeat right top;
+			border-radius:55%; 
 		}
 
 	#logo img {
-		max-width: 100%;
-		min-width: 90%; 
-		background-color: rgba(255,255,255 0.7)
+		max-width:100%;
+		min-width:90%; 
+		background-color:rgba(255,255,255 0.7);
 	}
+.logo-center {margin-right:auto !important; margin-left: auto!important; display: block!important;}
 
 	#banner {
 				height:200px;
 	 			width:100%; 
 	 			position: relative;
-	 			background-image: url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/bostonskyline.png");
+	 			background-image: url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/bostonskyline-bw.jpg");
 				background-repeat:no-repeat;
 				background-size: cover;
 				background-position: bottom;
 				border-top: 3px solid rgb(85,141,69);
 	 		}
-				/*@mediaquery to take away the image and decrease the height*/
+}
+}
+
+/*@mediaquery to take away the image and decrease the height*/
 
 /* nav */
 #nav {
-	position: absolute;
-	height: 40px;
-	top:331px;
-	padding-top: 2px;
-	background-color:rgba(255, 255, 255, 0.85);
-	z-index: 10000;
-}
+		position: absolute;
+		height: 40px;
+		top:335px;
+		padding-top: 2px;
+		background-color:rgba(255, 255, 255, 0.85);
+		z-index: 10000;
+	}
+
+	.nav-inside-page{top:163px !important;}
 
 	#nav, #nav li {margin: 0; padding:0;}
 	#nav li{ float:left; list-style: none outside none; margin-right: 0px;}
@@ -79,21 +104,14 @@ body {
 	#nav-wrap {margin-top: 0px;}
 	#menu-icon {display: none;}
 
-/* paragraph and heading styles */
-
-	h1 {font-family:'Open Sans', sans-serif;font-size: 250%; color: white;}
-	h2 {font-family:'Open Sans', sans-serif;font-size: 150%; color: black;}
-	h3 {font-family:'Open Sans', sans-serif; font-size: 115%; color: black; line-height: 1.1em;}
-	p {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 100%; color: black;}
-
 /* classes */
 	.center {text-align: center; margin-left: -10px;}
 	.homeimg {display: block; margin-left: auto; margin-right: auto;margin-top: 50px;}
 	.titleindent {text-indent: 70px;}
 	.subtitle {font-family: 'Open Sans', sans-serif; font-size: 16px; color: rgb(85,141,69); font-weight: bold;}
+	.headertext{color: white; line-height: 0.5em;}
 
 /* home page */
-
 	#sidebar {
 				height:auto; 
 				padding:1% 3% 1% 3%;
@@ -154,73 +172,45 @@ body {
 
 /* exclusive listings page */
 
-			#wrapper {
-				position: relative;
-				width: 55%;
-				left: 0;
-				top: 0px;
-			}
+			#wrapper {position: relative; width: 55%; left: 0; top: 0px;}
 
-			#carousel-text{
-				width: 40%;
-				padding: 2.5% 2.5%;
-			}
+			#carousel-text {width: 40%; padding: 2.5% 2.5%;}
 
-			#carousel-text h2{font-family:'Merriweather', serif;  font-size: 115%; color: black;}
-			#carousel-text h3{font-family:'Open Sans', serif;  font-size: 100%; line-height: 1.3em;}
-			#carousel-text p{font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 90%; color: black;}
+			#carousel-text h2 {font-family:'Merriweather', serif;  font-size: 115%; color: black;}
+			#carousel-text h3 {font-family:'Open Sans', serif;  font-size: 100%; line-height: 1.3em;}
+			#carousel-text p {font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 90%; color: black;}
 
-			#carousel-header{
-				width: 55%;
-			}
+			#carousel-header {width: 55%;}
 			#carousel-header h2{ font-family:'Open Sans', serif;  font-size: 100%; color: green; line-height: 5.5px;}
 
 			.b1 {width: 55%}
 		    .b2 {width: 55%;}
 		    .b3 {width: 45%}
 
-			#carousel-wrapper {
-				padding-bottom: 10px;
-				position: relative;
-			}
-			#carousel, #thumbs {
-				overflow: hidden;
-			}
+			#carousel-wrapper {padding-bottom: 10px; position: relative;}
+			#carousel, #thumbs {overflow: hidden;}
 			
-			#carousel-wrapper .caroufredsel_wrapper {
-				border-radius: 0px;
-				box-shadow: none;
-			}
+			#carousel-wrapper .caroufredsel_wrapper {border-radius: 0px; box-shadow: none;}
 			
-
 			#carousel span, #carousel img,
-			#thumbs a, #thumbs img  {
-				display: block;
-				float: left;
-			}
+			#thumbs a, #thumbs img  {display: block; float: left;}
 			#carousel span, #carousel a,
 			#thumbs span, #thumbs a {
-				position: relative;
-			}
+										position: relative;
+									}
 			#carousel img,
 			#thumbs img {
-				border: none;
-				width: 100%;
-				height: 100%;
-				position: relative;
-				top: 0;
-				left: 0;
-			}
+							border: none;
+							width: 100%;
+							height: 100%;
+							position: relative;
+							top: 0;
+							left: 0;
+						}
 
-			#carousel span {
-				width: 654px;
-				height: 313px;
-			}
+			#carousel span {width: 654px; height: 313px;}
 
-			#thumbs-wrapper {
-				padding: 20px 40px;
-				position: relative;
-			}
+			#thumbs-wrapper {padding: 20px 40px; position: relative;}
 			#thumbs a {
 				border: none;
 				width: 150px;
@@ -234,6 +224,7 @@ body {
 				-ms-transition: border-color .5s;
 				transition: border-color .5s;
 			}
+
 			#thumbs a:hover, #thumbs a.selected {
 				border-color: #566;
 			}
@@ -245,207 +236,174 @@ body {
 			}
 
 			#prev, #next {
-				background: transparent url('file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_nav.png') no-repeat 0 0;
-				display: block;
-				width: 19px;
-				height: 20px;
-				margin-top: -10px;
-				position: absolute;
-				top: 50%;
-			}
-			#prev {
-				background-position: 0 0;
-				left: 10px;
-			}
-			#next {
-				background-position: -19px 0;
-				right: 10px;
-			}			
-			#prev:hover { 
-				background-position: 0 -20px;				
-			}
-			#next:hover {
-				background-position: -19px -20px;				
-			}
-			#prev.disabled, #next.disabled {
-				display: none !important;
-			}
+							background: transparent url('file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/img/gui/carousel_nav.png') no-repeat 0 0;
+							display: block;
+							width: 19px;
+							height: 20px;
+							margin-top: -10px;
+							position: absolute;
+							top: 50%;
+						}						
+			#prev {background-position: 0 0; left: 10px;}
+			#next {background-position: -19px 0; right: 10px;}			
+			#prev:hover {background-position: 0 -20px;}
+			#next:hover {background-position: -19px -20px;}
+			#prev.disabled, #next.disabled {display: none !important;}
 
-#respond {
-	margin-top: 40px;
-}
+#respond {margin-top: 40px;}
 
 #respond input[type='text'],
 #respond input[type='email'], 
 #respond textarea {
-	margin-bottom: 10px;
-	display: block;
-	width: 100%;
+					margin-bottom: 10px;
+					display: block;
+					width: 100%;
 
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	border-radius: 5px;
+					border: 1px solid rgba(0, 0, 0, 0.1);
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					-o-border-radius: 5px;
+					-ms-border-radius: 5px;
+					-khtml-border-radius: 5px;
+					border-radius: 5px;
 
-	line-height: 1.4em;
-}
+					line-height: 1.4em;
+					}
 
 /* Client Testimonial Page */
 textarea { width: 90%; height: 90%;}
 
-
 /* footer */
-
 	footer {
-		height:auto; 
-		width: 97.5%; 
-		font-family: 'Open Sans', sans-serif; 
-		font-weight: 100;
-		float: left;
-		padding: 5px 0px 50px 2.5%;
-		background-color: rgba(85,141,69, 0.8);
+			height:auto; 
+			width: 97.5%; 
+			font-family: 'Open Sans', sans-serif; 
+			font-weight: 100;
+			float: left;
+			padding: 5px 0px 50px 2.5%;
+			background-color: rgba(85,141,69, 0.8);
 		}	
 
-	footer p{
-				font-size: 100%;
-				line-height: 0.7em;
-			}
+	footer p {font-size:100%; line-height:0.7em;}
 		
-	footer ul{margin: 0px; padding: none;}
-	footer li{display: inline-block; margin: 0; }
-	footer h3{line-height: 0.7em; margin-top: 40px;}
+	footer ul {margin:0px; padding:none;}
+	footer li {display:inline-block; margin:0; }
+	footer h3 {line-height:0.7em; margin-top:40px;}
 
 
 /* new code- columns*/
-.section {
-	padding: 0px;
-	margin: 0px;
-}
+.section {padding:0px; margin:0px;}
 
-.breaker { clear: both; }
+.breaker {clear:both;}
 
 .group:before,
 .group:after {
-    content:"";
-    display:table;
-}
-.group:after {
-    clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
-}
+			    content:"";
+			    display:table;
+			}
+.group:after {clear:both;}
+.group {zoom:1; /* For IE 6/7 (trigger hasLayout) */}
 
-.floatleft {
-    float: left;
-}
+.floatleft {float:left;}
 
-.floatright {
-    float: right;
-}
+.floatright {float:right;}
 
 
-.col {
-    display: block;
-    float: left;
-    margin: 1% 0 1% 1.6%;
-}
-	#footercontainer { width: 100%;}
+.col {display:block; float:left; margin:1% 0 1% 1.6%;}
+	#footercontainer {width:100%;}
 
-.span_12_of_12 { width: 100%;}
-.span_11_of_12 { width: 91.53%;}
-.span_10_of_12 { width: 83.06%;}
-.span_9_of_12 { width: 74.6%;}
-.span_8_of_12 { width: 66.13%;}
-.span_7_of_12 { width: 57.66%; }
-.span_6_of_12 { width: 49.2%; }
-.span_5_of_12 { width: 40.73%; }
-.span_4_of_12 { width: 32.26%; }
-.span_3_of_12 { width: 23.8%;}
-.span_2_of_12 { width: 15.33%; }
-.span_1_of_12 { width: 6.86%; }
+.span_12_of_12 {width:100%;}
+.span_11_of_12 {width:91.53%;}
+.span_10_of_12 {width:83.06%;}
+.span_9_of_12 {width:74.6%;}
+.span_8_of_12 {width:66.13%;}
+.span_7_of_12 {width:57.66%;}
+.span_6_of_12 {width:49.2%;}
+.span_5_of_12 {width:40.73%;}
+.span_4_of_12 {width:32.26%;}
+.span_3_of_12 {width:23.8%;}
+.span_2_of_12 {width:15.33%;}
+.span_1_of_12 {width:6.86%;}
 
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
-	.span_12_of_12 { width: 100%; }
-	.span_11_of_12 { width: 100%; }
-	.span_10_of_12 { width: 100%; }
-	.span_9_of_12 { width: 100%; }
-	.span_8_of_12 { width: 100%; }
-	.span_7_of_12 { width: 100%; }
-	.span_6_of_12 { width: 100%; }
-	.span_5_of_12 { width: 100%; }
-	.span_4_of_12 { width: 100%; }
-	.span_3_of_12 { width: 100%; }
-	.span_2_of_12 { width: 100%; }
-	.span_1_of_12 { width: 100%; }
-}
+@media only screen and (max-width:480px) {
+											.span_12_of_12 {width: 100%;}
+											.span_11_of_12 {width: 100%;}
+											.span_10_of_12 {width: 100%;}
+											.span_9_of_12 {width: 100%;}
+											.span_8_of_12 {width: 100%;}
+											.span_7_of_12 {width: 100%;}
+											.span_6_of_12 {width: 100%;}
+											.span_5_of_12 {width: 100%;}
+											.span_4_of_12 {width: 100%;}
+											.span_3_of_12 {width: 100%;}
+											.span_2_of_12 {width: 100%;}
+											.span_1_of_12 {width: 100%;}
+										}
 
 /* MEDIA QUERY ----------------------*/
 
 	@media screen and (max-width:670px){
-		h1{ font-size: 200%; text-align: center;}
-		.titleindent {text-indent: 0px;}
-		h2{text-align: center;}
+		h1 {font-size:200%; text-align:center;}
+		.titleindent {text-indent:0px;}
+		h2 {text-align:center;}
 
 	#banner {
-		background-image: none;
-		background-color:rgb(215,241,217);
-		height: 150px;
+				background-image:none;
+				background-color:rgb(215,241,217);
+				height:150px;
 			}
 	#logo{
-		width: 150px;
-		margin-right:50%;
-		margin-left: 33%;
-		border-radius:0; 
-		background: none;
-	}
+			width:150px;
+			margin-right:50%;
+			margin-left: 3%;
+			border-radius:0; 
+			background:none;
+		}
 
 
 	/* main nav - media query */
 
 #nav-wrap{ position: relative;}
+
 #menu-icon{ 
-	background: url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/menu.png") no-repeat scroll 5px center;
-	border: none;
-	color: rgba(0, 0, 0, 0);
-	cursor: pointer;
-	display: block;
-	height: 40px;
-	width: 15%;
-	margin-left: 85%;
-	top: 0px;
-	z-index: 10000;
-}
+			background:url("file:///Users/Emilycanina/Documents/Github/emilycanina.github.io/CDevonHomes2/images/menu.png") no-repeat scroll 5px center;
+			border:none;
+			color:rgba(0, 0, 0, 0);
+			cursor:pointer;
+			display:block;
+			height:40px;
+			width:15%;
+			margin-left: 85%;
+			top:0px;
+			z-index:10000;
+		}
 
-#menu-icon:hover {background-color: none; }
-#menu-icon:active { background-color: none;}
+#menu-icon:hover {background-color:none; }
+#menu-icon:active {background-color:none;}
 #nav {
-	background: none repeat scroll rgba(215,241,217, 0.9); 
-	clear: both;
-	display: none;
-	position: absolute;
-	top: 40px;
-	width: 100%;
-	height: 150px;
-	z-index: 10000;
-	border: 1px solid black;
-}
+		background: none repeat scroll rgba(215,241,217, 0.9); 
+		clear:both;
+		display:none;
+		position:absolute;
+		top:40px;
+		width:100%;
+		height:150px;
+		z-index:10000;
+		border:1px solid black;
+	}
 
-#nav li { clear: both; float: none; margin: 8px 0 8px 0; text-align: center; }
+#nav li {clear:both; float:none; margin:8px 0 8px 0; text-align:center;}
 #nav li:first-child {margin: 8px 0 8px 0;}
 #nav a, #nav ul a {
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-	color: #666666;
-	display: inline;
-	font: inherit;
-	padding: 0;
-}
+					background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+					color:#666666;
+					display:inline;
+					font:inherit;
+					padding:0;
+				}
 
 #nav a:hover, #nav ul a:hover {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
